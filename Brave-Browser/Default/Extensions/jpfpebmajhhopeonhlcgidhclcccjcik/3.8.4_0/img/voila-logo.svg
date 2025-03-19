@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>shape-87</title>
+    <defs>
+        <linearGradient x1="75.8565341%" y1="18.944453%" x2="22.000003%" y2="73.75%" id="linearGradient-1">
+            <stop stop-color="#FF6EFF" offset="0%"></stop>
+            <stop stop-color="#4055CA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-18" transform="translate(-1991.000000, 0.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-15" transform="translate(263.000000, 0.000000)">
+                <g id="Group-Copy" transform="translate(150.000000, 0.000000)">
+                    <g id="shape-87" transform="translate(1578.000000, 0.000000)">
+                        <path d="M15.9961446,16 C7.16136095,15.99792 0,8.835264 0,0 L32,0 C32,8.835264 24.8387203,15.99792 16.0038406,16 C24.8387203,16.00208 32,23.1648 32,32 C32,32 0,32 0,32 C0,23.1648 7.16136095,16.00208 15.9961446,16 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

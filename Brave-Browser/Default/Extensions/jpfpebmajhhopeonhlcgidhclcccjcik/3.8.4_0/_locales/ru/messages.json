@@ -1,0 +1,1222 @@
+{
+   "account": {
+      "message": "Учетная запись пользователя"
+   },
+   "add": {
+      "message": "Добавить"
+   },
+   "afternoon": {
+      "message": "После полудня"
+   },
+   "agree_to_privacy_policy": {
+      "message": "Я согласен с \u003Ca href='https://www.speeddial2.com/privacy-policy' target='_blank'>политикой конфиденциальности\u003C/a>."
+   },
+   "agree_to_privacy_policy_error": {
+      "message": "Вы должны согласиться с политикой конфиденциальности, чтобы продолжить"
+   },
+   "already_have_an_account": {
+      "message": "Уже есть учетная запись?"
+   },
+   "appDescription": {
+      "description": "Never translate application name",
+      "message": "Speed Dial 2 — быстрая и простая новая вкладка для сохранения и организации ваших любимых веб-сайтов."
+   },
+   "appName": {
+      "description": "App name - never translate application name",
+      "message": "Speed Dial 2 Новая вкладка"
+   },
+   "appShortName": {
+      "description": "App name - never translate application name",
+      "message": "Speed Dial 2"
+   },
+   "applications": {
+      "message": "Приложения"
+   },
+   "apps_app_uninstalled": {
+      "message": "Приложение было успешно удалено"
+   },
+   "apps_do_you_want_to_uninstall": {
+      "message": "Вы действительно хотите удалить приложение?"
+   },
+   "auto": {
+      "message": "Авто"
+   },
+   "back": {
+      "message": "Назад"
+   },
+   "back_to_bookmarks": {
+      "message": "Вернуться к закладкам"
+   },
+   "background": {
+      "message": "фон"
+   },
+   "background_color": {
+      "message": "Цвет фона"
+   },
+   "bookmark": {
+      "message": "Закладка"
+   },
+   "bookmarks": {
+      "message": "Закладки"
+   },
+   "border": {
+      "message": "граница"
+   },
+   "cancel": {
+      "message": "Отменить"
+   },
+   "center": {
+      "description": "Alight to center",
+      "message": "Центр"
+   },
+   "choose_password": {
+      "message": "Выберите пароль"
+   },
+   "click_here_to_start": {
+      "message": "Click here to start"
+   },
+   "click_to_confirm_background": {
+      "message": "Нажмите, чтобы установить этот фон"
+   },
+   "close": {
+      "message": "Закрыть"
+   },
+   "close_message": {
+      "description": "Close this message",
+      "message": "Закрыть сообщение"
+   },
+   "color": {
+      "message": "Цвет"
+   },
+   "coming_soon": {
+      "message": "Скоро"
+   },
+   "compact_layout": {
+      "description": "A more compact layout option",
+      "message": "Компактный макет"
+   },
+   "contain": {
+      "description": "Do not crop image",
+      "message": "Изображение по размеру"
+   },
+   "continue": {
+      "message": "Продолжить"
+   },
+   "continue_without_account": {
+      "message": "Продолжить вне аккаунта"
+   },
+   "copied": {
+      "message": "Скопировано"
+   },
+   "copy_link": {
+      "message": "Kопировать ссылку"
+   },
+   "copy_url": {
+      "message": "Копировать URL"
+   },
+   "cover": {
+      "description": "Cover entire screen with image",
+      "message": "Заполнить изображением"
+   },
+   "custom_css_add": {
+      "message": "Add custom CSS"
+   },
+   "custom_css_enter": {
+      "message": "Enter your custom CSS without the &lt;style&gt; tag"
+   },
+   "custom_css_text": {
+      "message": "Please note that this option is for advanced users only, don't write anything here unless you know what you're doing :)"
+   },
+   "customize_background_color": {
+      "message": "Настроить цвет фона"
+   },
+   "customize_dark_theme": {
+      "message": "Темная тема"
+   },
+   "customize_light_theme": {
+      "message": "Светлая тема"
+   },
+   "dark": {
+      "description": "Dark background color",
+      "message": "Темный"
+   },
+   "default": {
+      "message": "по умолчанию"
+   },
+   "delete": {
+      "message": "Удалить"
+   },
+   "disabled": {
+      "message": "Отключено"
+   },
+   "dont_repeat": {
+      "description": "Do not repeat background image",
+      "message": "Не повторять"
+   },
+   "edit": {
+      "message": "Редактировать"
+   },
+   "email": {
+      "message": "Эл. адрес"
+   },
+   "enter_password": {
+      "message": "Введите пароль"
+   },
+   "enter_your_email": {
+      "message": "Введите Ваш адрес эл. почты"
+   },
+   "error_enter_email": {
+      "message": "В введите Ваш адрес эл. почты."
+   },
+   "error_enter_password": {
+      "message": "Ввведите Ваш пароль."
+   },
+   "error_file_too_large": {
+      "message": "К сожалению, этот файл слишком большой."
+   },
+   "error_invalid_email": {
+      "message": "Введите действительный адрес эл. почты."
+   },
+   "error_payment": {
+      "message": "При обработке платежа произошла ошибка. Оплата не проведена."
+   },
+   "evening": {
+      "message": "Вечером"
+   },
+   "font_bold": {
+      "message": "Bold"
+   },
+   "font_bold_italic": {
+      "message": "Bold Italic"
+   },
+   "font_italic": {
+      "message": "Italic"
+   },
+   "font_normal": {
+      "message": "Normal"
+   },
+   "forgot_password": {
+      "message": "Забыли пароль?"
+   },
+   "general": {
+      "message": "Общие настройки"
+   },
+   "group": {
+      "message": "Группа"
+   },
+   "groups": {
+      "message": "Группы"
+   },
+   "help": {
+      "message": "Помощь"
+   },
+   "high": {
+      "description": "High quality",
+      "message": "Высокое"
+   },
+   "home": {
+      "message": "Домой"
+   },
+   "horizontally": {
+      "description": "Repeat horizontally",
+      "message": "По горизонтали"
+   },
+   "i_understand": {
+      "description": "I understan and I wish to proceed",
+      "message": "Я понимаю"
+   },
+   "image_hosting_providers": {
+      "message": "Tip: You can use image hosting providers (e.g. imgur.com) to upload a background image."
+   },
+   "inside": {
+      "message": "Внутри"
+   },
+   "large": {
+      "message": "Большой"
+   },
+   "last_synchronization": {
+      "message": "last synchronization"
+   },
+   "learn_about_chrome_apps": {
+      "message": "Learn more about Chrome Apps"
+   },
+   "learn_more": {
+      "message": "Узнать больше"
+   },
+   "left": {
+      "description": "Alight to left",
+      "message": "Слева"
+   },
+   "light": {
+      "message": "светлый"
+   },
+   "low": {
+      "description": "Low quality",
+      "message": "Низкое"
+   },
+   "medium": {
+      "description": "Medium quality",
+      "message": "Среднее"
+   },
+   "mobile_app": {
+      "message": "Мобильное приложение"
+   },
+   "mobile_app_description": {
+      "message": "Легко получайте доступ и сохраняйте закладки на ходу."
+   },
+   "morning": {
+      "message": "Утром"
+   },
+   "move_to": {
+      "message": "Переместить в"
+   },
+   "name": {
+      "message": "Имя"
+   },
+   "new": {
+      "description": "New feature badge",
+      "message": "Новый"
+   },
+   "new_tab": {
+      "description": "This is New tab page of Google Chrome",
+      "message": "Новая вкладка"
+   },
+   "newest_first": {
+      "message": "От новых к старым"
+   },
+   "newtab_add_dial_error": {
+      "message": "Пожалуйста, заполните все обязательные поля."
+   },
+   "newtab_add_new_dial": {
+      "message": "Добавить новую закладку"
+   },
+   "newtab_app_launch": {
+      "message": "Запустить приложение"
+   },
+   "newtab_click_to_learn_more": {
+      "message": "Нажмите здесь, чтобы узнать больше."
+   },
+   "newtab_create_group": {
+      "description": "Create new group (a list of bookmarks)",
+      "message": "Создать новую группу"
+   },
+   "newtab_customize_thumbnail": {
+      "description": "Customize thumbnail image",
+      "message": "Настроить эскиз"
+   },
+   "newtab_customize_thumbnail_text": {
+      "message": "Эскиз будет сделан после первого посещения страницы, либо Вы можете выбрать один из логотипов популярных веб-сайтов, загрузить изображение со своего компьютера или ввести URL."
+   },
+   "newtab_dial_remove_warning": {
+      "message": "Вы действительно хотите удалить эту закладку?"
+   },
+   "newtab_dial_saved": {
+      "message": "Закладка сохранена."
+   },
+   "newtab_edit_dial": {
+      "message": "Изменить закладку"
+   },
+   "newtab_edit_group": {
+      "message": "Изменить группу"
+   },
+   "newtab_enter_group_name": {
+      "description": "Error: Please enter a name of new group",
+      "message": "Пожалуйста, введите имя"
+   },
+   "newtab_enter_name": {
+      "message": "Введите имя"
+   },
+   "newtab_feature_locked": {
+      "description": "Available only to premium users",
+      "message": "Эта функция доступна только для пользователей Pro."
+   },
+   "newtab_group_edited": {
+      "description": "Settings of a group (a list of bookmarks) has been saved",
+      "message": "Группа была обновлена."
+   },
+   "newtab_group_remove_warning": {
+      "description": "Mind and keep tag",
+      "message": "Выбранная группа и все закладки в ней будут удалены. Хотите продолжить?"
+   },
+   "newtab_group_removed": {
+      "description": "Group (a list of bookmarks) has been removed",
+      "message": "Группа была удалена."
+   },
+   "newtab_homegroup": {
+      "message": "Это ваша основная группа"
+   },
+   "newtab_open_all_links": {
+      "description": "Open all bookmarks within group",
+      "message": "Открыть все закладки"
+   },
+   "newtab_open_in_new_tab": {
+      "description": "Open bookmark in new tab in a browser",
+      "message": "Открыть в новой вкладке"
+   },
+   "newtab_reload_thumbnail": {
+      "description": "Reload thumbnail image",
+      "message": "Перезагрузить эскиз"
+   },
+   "newtab_remove_group": {
+      "message": "Удалить группу"
+   },
+   "newtab_remove_question": {
+      "message": "Удалить закладку"
+   },
+   "newtab_search_your_bookmarks": {
+      "description": "Search within your bookmarks",
+      "message": "Поиск закладок"
+   },
+   "newtab_search_your_history": {
+      "description": "Search within your history",
+      "message": "Поиск в истории"
+   },
+   "newtab_select_from_most_popular": {
+      "description": "Select site from the list of most popular websites",
+      "message": "Выберите из самых популярных веб-сайтов"
+   },
+   "newtab_thumbnail_file": {
+      "message": "Выберите файл"
+   },
+   "newtab_thumbnail_image_url": {
+      "message": "Введите URL изображения"
+   },
+   "newtab_thumbnail_popular": {
+      "message": "Самые популярные веб-сайты"
+   },
+   "newtab_type_url": {
+      "message": "Введите или вставьте URL"
+   },
+   "newtab_update_group": {
+      "message": "Обновить группу"
+   },
+   "night": {
+      "message": "Ночью"
+   },
+   "none": {
+      "message": "Выключенный"
+   },
+   "oldest_first": {
+      "message": "От старых к новым"
+   },
+   "options": {
+      "message": "Параметры"
+   },
+   "options_apps_show_panel": {
+      "description": "Show panel (toolbar) with applications",
+      "message": "Показать панель с установленными приложениями?"
+   },
+   "options_apps_show_panel_help": {
+      "message": " "
+   },
+   "options_background_leave_empty": {
+      "message": "Оставить пустым и не устанавливать фоновое изображение"
+   },
+   "options_customize_background_color": {
+      "message": "Цвет фона"
+   },
+   "options_customize_border_colors": {
+      "message": "Цвет границы"
+   },
+   "options_customize_customize_colors": {
+      "message": "Настройка цветов"
+   },
+   "options_customize_font_face": {
+      "message": "Шрифт"
+   },
+   "options_customize_font_size": {
+      "message": "Размер шрифта"
+   },
+   "options_customize_font_style": {
+      "message": "Стиль шрифта"
+   },
+   "options_customize_inner_background_color": {
+      "message": "Цвет внутреннего фона"
+   },
+   "options_customize_no_shadow": {
+      "message": "Без тени"
+   },
+   "options_customize_padding": {
+      "message": "Заполнение"
+   },
+   "options_customize_preview": {
+      "message": "Предпросмотр"
+   },
+   "options_customize_rounded_corners": {
+      "message": "Закругленные углы"
+   },
+   "options_customize_shadow": {
+      "description": "Visual shadow under element",
+      "message": "Тень"
+   },
+   "options_customize_show_title": {
+      "message": "Показывать названия закладок?"
+   },
+   "options_customize_show_visits": {
+      "message": "Показывать количество посещений?"
+   },
+   "options_customize_text_align": {
+      "message": "Выравнивание текста"
+   },
+   "options_customize_title": {
+      "message": "Название"
+   },
+   "options_customize_title_color": {
+      "description": "Color of title",
+      "message": "Цвет названия"
+   },
+   "options_dialog_center_vertically": {
+      "message": "По вертикали по центру"
+   },
+   "options_dialog_columns": {
+      "message": "столбцы"
+   },
+   "options_dialog_more_options": {
+      "message": "Дополнительные параметры"
+   },
+   "options_dialog_open_help": {
+      "message": "Открыть справку"
+   },
+   "options_dialog_open_stats": {
+      "message": "Открыть статистику"
+   },
+   "options_dialog_protect_your_data": {
+      "message": "Защитите Ваши данные с помощью синхронизации и резервного копирования"
+   },
+   "options_dialog_set_columns": {
+      "description": "Number of columns in a row",
+      "message": "Количество столбцов"
+   },
+   "options_dialog_stats_and_help": {
+      "message": "Статистика и справка"
+   },
+   "options_dialog_sync_last": {
+      "description": "Last synchronization time",
+      "message": "Последняя синхронизация"
+   },
+   "options_dialog_sync_ok": {
+      "description": "Ensures user's data is safe",
+      "message": "Ваши данные синхронизированы и скопированны!"
+   },
+   "options_dialog_themes": {
+      "description": "Visual themes",
+      "message": "Темы"
+   },
+   "options_dialog_title": {
+      "message": "Настройки"
+   },
+   "options_export_download": {
+      "message": "Скачать одним файлом"
+   },
+   "options_export_result": {
+      "message": "Здесь находятся Ваши экспортированные настройки - Вы можете скопировать и вставить их на другое устройство с помощью кнопки \"Импортировать настройки\"."
+   },
+   "options_export_text": {
+      "message": " "
+   },
+   "options_export_title": {
+      "description": "Export user's settings",
+      "message": "Экспортировать настройки"
+   },
+   "options_import_result": {
+      "message": "Загрузите экспортированные раннее настройки, с помощью функции \"Экспорт настроек\"."
+   },
+   "options_import_text": {
+      "message": " "
+   },
+   "options_import_title": {
+      "message": "Импортировать настройки"
+   },
+   "options_import_warning_text_1": {
+      "message": "Эта операция заменит все Ваши закладки и группы новыми."
+   },
+   "options_import_warning_text_2": {
+      "message": "Если Вы еще не вышли из своего аккаунта, кроме изменений на Вашем компьютере, импорт настроек приведет к тому, что закладки и группы также будут заменены на нашем сервере!"
+   },
+   "options_nav_apps": {
+      "message": "Приложения"
+   },
+   "options_nav_background": {
+      "description": "Visual themes",
+      "message": "Темы"
+   },
+   "options_nav_backup": {
+      "message": "Импорт/экспорт"
+   },
+   "options_nav_changelog": {
+      "message": "Журнал изменений"
+   },
+   "options_nav_customize": {
+      "message": "Настроить внешний вид"
+   },
+   "options_nav_options": {
+      "message": "Параметры"
+   },
+   "options_nav_sidebar": {
+      "description": "Toolbar at the side of the screen",
+      "message": "Боковая панель"
+   },
+   "options_nav_sync": {
+      "description": "Synchronization and backup",
+      "message": "Синхронизация"
+   },
+   "options_nav_widgets": {
+      "message": "Надстройки"
+   },
+   "options_options": {
+      "message": "Параметры"
+   },
+   "options_options_advanced_options": {
+      "message": "Дополнительно"
+   },
+   "options_options_center_vertically": {
+      "description": "visually center",
+      "message": "Центрировать рядки по вертикали?"
+   },
+   "options_options_columns": {
+      "description": "Number of columns in a row",
+      "message": "Количество столбцов"
+   },
+   "options_options_columns_help": {
+      "message": " "
+   },
+   "options_options_columns_in_a_row": {
+      "message": "в рядке"
+   },
+   "options_options_custom_ratio": {
+      "message": "Свой размер эскиза"
+   },
+   "options_options_enable_recommender_description": {
+      "message": "Обратите внимание, что эта функция требует сбора анонимных данных о посещаемых вами веб-сайтах"
+   },
+   "options_options_enable_recommender_label": {
+      "message": "Показать рекомендуемые сайты"
+   },
+   "options_options_enable_recommender_text": {
+      "message": ""
+   },
+   "options_options_fit_logos": {
+      "description": "How to position image within element",
+      "message": "Как установить свой логотип?"
+   },
+   "options_options_fit_logos_dont_resize": {
+      "message": "Не изменять размер"
+   },
+   "options_options_fit_logos_fit": {
+      "description": "Fit to element",
+      "message": "Подогнать (по умолчанию)"
+   },
+   "options_options_fit_logos_fit_and_center": {
+      "message": "Подогнать по ширине и по центру"
+   },
+   "options_options_fit_logos_fit_width": {
+      "message": "Подогнать по ширине"
+   },
+   "options_options_highlight_pages": {
+      "description": "Visually distinguish most visited sites",
+      "message": "Выделять часто посещаемые страницы?"
+   },
+   "options_options_highlight_pages_help": {
+      "message": " "
+   },
+   "options_options_modify_width": {
+      "message": "Изменить ширину"
+   },
+   "options_options_modify_width_screen": {
+      "message": "экрана"
+   },
+   "options_options_open_in_new_tab": {
+      "message": "Открывать ссылки в новой вкладке?"
+   },
+   "options_options_open_in_new_tab_help": {
+      "message": "Отметьте, чтобы ссылки открывались в новой вкладке. Если нажать на среднюю кнопку мыши или Ctrl+кликнуть по ссылке, она откроется в текущей вкладке."
+   },
+   "options_options_order_dials": {
+      "description": "Sort bookmarks by...",
+      "message": "Сортировать закладки по"
+   },
+   "options_options_order_dials_help": {
+      "message": " "
+   },
+   "options_options_order_manual": {
+      "description": "Sort manually",
+      "message": "Сортировать вручную"
+   },
+   "options_options_order_most_visited": {
+      "description": "Sort by number of visits",
+      "message": "Самые посещаемые"
+   },
+   "options_options_plus_button_button": {
+      "message": "кнопка"
+   },
+   "options_options_plus_button_show": {
+      "description": "e.g. Display",
+      "message": "Показать"
+   },
+   "options_options_refresh_thumbnail": {
+      "description": "Reload image?",
+      "message": "Обновить эскиз"
+   },
+   "options_options_refresh_thumbnail_disabled": {
+      "message": "Отключено (по умолчанию)"
+   },
+   "options_options_remember_group": {
+      "description": "Remeber last visited group",
+      "message": "Запомнить текущую группу"
+   },
+   "options_options_remember_group_help": {
+      "message": "При новом запуске запоминать и открывать последнюю используемую группу."
+   },
+   "options_options_scroll_layout": {
+      "message": "Размещение"
+   },
+   "options_options_scroll_layout_fit": {
+      "description": "Always fit bookmarks on a screen",
+      "message": "Подгонять закладки на экране"
+   },
+   "options_options_scroll_layout_scroll": {
+      "description": "Allow scrolling on a page",
+      "message": "Разрешить прокрутку"
+   },
+   "options_options_show_in_context_menu": {
+      "message": "Показывать Speed Dial 2 в контекстном меню"
+   },
+   "options_options_show_options_button": {
+      "message": "Показывать кнопку Параметры?"
+   },
+   "options_options_spacing": {
+      "description": "Visual spacing between elements",
+      "message": "Расстояние между закладками"
+   },
+   "options_options_sync_and_backup": {
+      "message": "Синхронизация и резервное копирование"
+   },
+   "options_options_sync_and_backup_protect": {
+      "message": "Защитите Ваши настройки с"
+   },
+   "options_options_thumbnail_quality": {
+      "description": "Quality of thumbnail image",
+      "message": "Качество эскиза"
+   },
+   "options_pagetitle": {
+      "message": "Speed ​​Dial 2 - Параметры"
+   },
+   "options_requires_restart": {
+      "message": "необходимо перезапустить браузер"
+   },
+   "options_sidebar_show_apps": {
+      "message": "Показывать Приложения?"
+   },
+   "options_sidebar_show_bookmarks": {
+      "message": "Показывать Закладки?"
+   },
+   "options_sidebar_show_history": {
+      "description": "Show the list of recently closed browser tabs",
+      "message": "Показывать Недавно закрытые вкладки?"
+   },
+   "options_sidebar_use_sidebar": {
+      "description": "Whether to show sidebar (toolbar)",
+      "message": "Использовать боковую панель?"
+   },
+   "options_themes_bg_color": {
+      "message": "Цвет фона"
+   },
+   "options_themes_bg_position": {
+      "message": "Положение фона"
+   },
+   "options_themes_bg_repeat": {
+      "message": "Повторение фона"
+   },
+   "options_themes_bg_size": {
+      "message": "Размер фона"
+   },
+   "options_themes_bg_url": {
+      "message": "URL изображения для фона"
+   },
+   "options_themes_file": {
+      "message": "Выбрать изображение с компьютера"
+   },
+   "options_themes_more_themes": {
+      "message": "Другие темы"
+   },
+   "options_themes_premium_themes": {
+      "message": "Pro Темы"
+   },
+   "options_themes_premium_themes_text": {
+      "message": "Эта функция доступна только для пользователей Pro"
+   },
+   "options_themes_saved": {
+      "message": "Фон был успешно настроен. Вы можете настроить другие параметры, например, размер фона или его положение."
+   },
+   "options_themes_settings": {
+      "message": "Настроить фон"
+   },
+   "options_themes_themes": {
+      "description": "Visual themes",
+      "message": "Темы"
+   },
+   "options_themes_url": {
+      "message": "Свой URL"
+   },
+   "or": {
+      "message": "ИЛИ"
+   },
+   "original_size": {
+      "description": "Keep opriginal size",
+      "message": "Оригинальный размер"
+   },
+   "other_devices": {
+      "description": "Other devices (e.g. mobile phone, tablet)",
+      "message": "Другие устройства"
+   },
+   "overall": {
+      "message": "Общая"
+   },
+   "password": {
+      "message": "Пароль"
+   },
+   "pay": {
+      "message": "Заплатить"
+   },
+   "people_with_link_can": {
+      "message": "Люди со ссылкой могут"
+   },
+   "permissions_view_and_edit_group": {
+      "message": "Дисплей и создание закладок"
+   },
+   "permissions_view_group": {
+      "message": "Показать закладки"
+   },
+   "position": {
+      "description": "Position of title (e.g. top, bottom, )",
+      "message": "Позиция"
+   },
+   "position_bottom": {
+      "message": "Bottom"
+   },
+   "position_center": {
+      "message": "Center"
+   },
+   "position_left": {
+      "message": "Left"
+   },
+   "position_right": {
+      "message": "Right"
+   },
+   "position_top": {
+      "message": "Top"
+   },
+   "previous_uploads": {
+      "message": "Последние отправки"
+   },
+   "privacy_policy": {
+      "message": "политика конфиденциальности"
+   },
+   "pro_sync_backups": {
+      "message": "Резервные копии Ваших данных"
+   },
+   "pro_sync_features_0": {
+      "message": "Никогда не теряйте доступ к своим закладкам и храните их в безопасности."
+   },
+   "pro_sync_features_1": {
+      "description": "Please mind and keep html tags",
+      "message": "Синхронизация и резервное копирование!"
+   },
+   "pro_sync_features_2": {
+      "description": "Please mind and keep html tags",
+      "message": "Онлайн  доступ к закладкам."
+   },
+   "pro_sync_features_3": {
+      "description": "Please mind and keep html tags",
+      "message": "Доступ с мобильных устройств."
+   },
+   "pro_sync_features_4": {
+      "message": "Расширенная персональная настройка."
+   },
+   "pro_sync_features_5": {
+      "message": "Поддержка эл. почты и не только..."
+   },
+   "pro_sync_how_it_works": {
+      "message": "Как приложение работает?"
+   },
+   "pro_sync_how_it_works_1_text": {
+      "message": "С приложением Speed Dial Pro Ваши закладки и настройки автоматически синхронизируются с нашим сервером speeddial2.com и всегда доступны на всех Ваших компьютерах и устройствах."
+   },
+   "pro_sync_how_it_works_1_title": {
+      "message": "Надежная синхронизация"
+   },
+   "pro_sync_how_it_works_2_text": {
+      "message": "Онлайн доступ к закладкам со всех Ваших мобильных устройств после авторизации на https://speeddial2.com. Для быстрого доступа к закладкам с мобильного устройства, установите Speed Dial 2 как домашнюю страницу или закрепите закладку на стартовом экране."
+   },
+   "pro_sync_how_it_works_2_title": {
+      "message": "Доступ к закладкам онлайн и с мобильного"
+   },
+   "pro_sync_lifetime": {
+      "description": "e.g. $4.99 for a lifetime account",
+      "message": "за постоянный премиум аккаунт."
+   },
+   "pro_sync_see_your_bookmarks_online": {
+      "description": "Click to open web page with user's bookmarks",
+      "message": "Посмотреть закладки онлайн"
+   },
+   "pro_sync_setup_option_1": {
+      "message": "Объединить существующие закладки и группы с остальными в моей синхронизации"
+   },
+   "pro_sync_setup_option_2": {
+      "message": "Заменить мои существующие настройки закладками с синхронизируемого аккаунта"
+   },
+   "pro_sync_setup_text": {
+      "message": "Похоже, Вы впервые синхронизируете свой компьютер с нашим сервером. Сохранить Ваши существующие закладки и группы, объединив их с данными синхронизации?"
+   },
+   "pro_sync_signed_in_ok": {
+      "description": "All your data is synchronized",
+      "message": "Все Ваши данные в облаке!"
+   },
+   "pro_sync_status": {
+      "message": "Статус Вашего аккаунта"
+   },
+   "pro_sync_tagline": {
+      "description": "Can be changed to something like: Have your bookmarks always with you.",
+      "message": "Если вам понравилось приложение Speed Dial 2, то Вы обязательно захотите, чтобы ваши закладки всегда были с вами!"
+   },
+   "pro_sync_upgrade": {
+      "message": "Обновить до Speed Dial 2 Pro"
+   },
+   "pro_sync_upgrade_cta": {
+      "message": "Обновить до Speed Dial 2 Pro"
+   },
+   "pro_sync_upgrade_done_continue": {
+      "message": "Начать первую синхронизацию"
+   },
+   "pro_sync_upgrade_done_text": {
+      "message": "Ваши настройки и закладки будут синхронизированы и скопированы! Нажмите на кнопку ниже, чтобы начать Вашу первую синхронизацию."
+   },
+   "pro_sync_upgrade_text": {
+      "message": "Отлично! Сделайте последний шаг до версии Pro. Выберите способ оплаты."
+   },
+   "pro_sync_upgrade_title": {
+      "description": "Select payment method",
+      "message": "Как Вы хотите заплатить?"
+   },
+   "pro_sync_upgrade_your_account": {
+      "description": "Upgrade your account to premium",
+      "message": "Улучшите тип аккаунта!"
+   },
+   "pro_sync_username": {
+      "message": "Имя пользователя или адрес эл. почты"
+   },
+   "purchase": {
+      "message": "Покупка"
+   },
+   "read_more": {
+      "message": "Читать дальше"
+   },
+   "recently_closed_tabs": {
+      "message": "Недавно закрытые вкладки"
+   },
+   "refresh": {
+      "description": "Refresh web page",
+      "message": "Обновить"
+   },
+   "reload": {
+      "message": "Перезагрузить"
+   },
+   "remove": {
+      "description": "e.g. Remove bookmark",
+      "message": "Удалить"
+   },
+   "repeat": {
+      "description": "Repeat background image",
+      "message": "Повторять"
+   },
+   "reset_password": {
+      "message": "Сброс пароля"
+   },
+   "reset_to_default": {
+      "message": "Восстановить значения по умолчанию"
+   },
+   "right": {
+      "description": "Alight to right",
+      "message": "Справа"
+   },
+   "save": {
+      "message": "Сохранить"
+   },
+   "save_page_to": {
+      "message": "Сохранить страницу"
+   },
+   "save_settings": {
+      "message": "Сохранить настройки"
+   },
+   "search": {
+      "message": "Поиск"
+   },
+   "select_background": {
+      "message": "Выберите фон"
+   },
+   "select_file": {
+      "message": "Выберите файл"
+   },
+   "set_up_your_account": {
+      "description": "Set up your premium account",
+      "message": "Настроить аккаунт"
+   },
+   "share_to_web": {
+      "message": "Поделиться"
+   },
+   "share_to_web_helper": {
+      "message": "Публиковать группу и поделиться связь с кем угодно"
+   },
+   "show_all": {
+      "message": "Показать все"
+   },
+   "show_help": {
+      "message": "Показать справку"
+   },
+   "show_on_this_device": {
+      "message": "Группы, чтобы показать на этом устройстве"
+   },
+   "sidebar_clear_list": {
+      "description": "Clear the list of Recently closed tabs",
+      "message": "Очистить список"
+   },
+   "sign_in": {
+      "message": "Войти"
+   },
+   "sign_out": {
+      "message": "Выйти"
+   },
+   "sign_out_confirm": {
+      "message": "Вы действительно хотите выйти?"
+   },
+   "sign_out_done": {
+      "message": "Вы вышли со своего аккаунта."
+   },
+   "sign_up": {
+      "message": "Подписаться"
+   },
+   "signed_in_as": {
+      "message": "Вы вошли как"
+   },
+   "small": {
+      "message": "Маленький"
+   },
+   "spacing": {
+      "description": "Visual spacing between elements",
+      "message": "Расстояние"
+   },
+   "statistics": {
+      "message": "Статистика"
+   },
+   "statistics_loading_message": {
+      "message": "Пожалуйста, подождите, пока мы анализируем Вашу историю браузера."
+   },
+   "statistics_most_visited_history": {
+      "message": "Часто посещаемые страницы (История браузера)"
+   },
+   "statistics_most_visited_sd2": {
+      "message": "Часто посещаемые страницы (Speed Dial 2)"
+   },
+   "statistics_pagetitle": {
+      "message": "Speed Dial 2 - Статистика"
+   },
+   "statistics_statistics": {
+      "message": "Статистика"
+   },
+   "sync_complete": {
+      "message": "Синхронизация завершена..."
+   },
+   "sync_connected": {
+      "message": "Привязан к Вашему аккаунту."
+   },
+   "sync_connecting": {
+      "message": "Соединение с сервером синхронизации..."
+   },
+   "sync_enter_credentials": {
+      "message": "Введите имя пользователя и пароль"
+   },
+   "sync_error_import": {
+      "message": "При иморте настроек произошла ошибка."
+   },
+   "sync_error_not_active": {
+      "message": "Ваш аккаунт не активен. Улучшите тип аккаунта до Speed Dial Pro, чтобы активировать."
+   },
+   "sync_error_timeout": {
+      "message": "При подключении к серверу произошла ошибка."
+   },
+   "sync_now": {
+      "message": "Синхронизировать"
+   },
+   "sync_ok": {
+      "message": "Sync OK"
+   },
+   "sync_preparing": {
+      "message": "Подготовка к первой синхронизации..."
+   },
+   "sync_wait": {
+      "message": "Пожалуйста, дождитесь завершения синхронизации..."
+   },
+   "sync_wrong_credentials": {
+      "message": "Неправильный адрес эл. почты или пароль"
+   },
+   "system": {
+      "message": "Система"
+   },
+   "text": {
+      "message": "Текст"
+   },
+   "thank_you": {
+      "message": "Спасибо!"
+   },
+   "theme": {
+      "message": "Тема"
+   },
+   "title": {
+      "message": "Название"
+   },
+   "top": {
+      "message": "Наверх"
+   },
+   "transparent": {
+      "description": "Transparent background color",
+      "message": "Прозрачный"
+   },
+   "tweet_and_become_a_pro": {
+      "message": "Tweet about us and become a Pro!"
+   },
+   "tweet_and_win": {
+      "message": "Tweet and win our Pro account"
+   },
+   "tweet_giveaway_description": {
+      "message": "Each month, we give out Premium accounts for the best tweets about us!"
+   },
+   "undo": {
+      "message": "Отменить"
+   },
+   "uninstall": {
+      "message": "Удалить"
+   },
+   "update": {
+      "message": "Обновить"
+   },
+   "upgrade": {
+      "message": "обновить"
+   },
+   "url": {
+      "message": "Url"
+   },
+   "user_interface": {
+      "message": "Пользовательский интерфейс"
+   },
+   "vertically": {
+      "description": "Repeat vertically",
+      "message": "По вертикали"
+   },
+   "visits": {
+      "description": "e.g. Number of visits",
+      "message": "посещения"
+   },
+   "warning": {
+      "message": "Предупреждение"
+   },
+   "welcome_10_1": {
+      "message": "На основе истории Вашего браузера мы составили список рекомендуемых сайтов, с которых Вы можете начать работу. Выберите сайты, которые Вы хотите добавить в Speed Dial, и нажмите Закончить."
+   },
+   "welcome_10_h1": {
+      "description": "Recommended sites for user",
+      "message": "Рекомендуемые сайты"
+   },
+   "welcome_1_1": {
+      "message": "Последние три года мы усердно трудились над созданием идеальной страницы новой вкладки, прислушиваясь к пожеланиям наших пользователей и не забывая о простоте и удобстве."
+   },
+   "welcome_1_2": {
+      "message": "Посмотрите презентацию о функциях нашего расширения, что поможет Вам быстрее освоиться. Это не займет много времени!"
+   },
+   "welcome_1_h1": {
+      "message": "Добро пожаловать в Speed Dial 2!"
+   },
+   "welcome_2_1": {
+      "message": "Наше расширение создает визуальные закладки для Ваших любимых веб-сайтов."
+   },
+   "welcome_2_2": {
+      "description": "Unlike default new tab page in Google Chrome...",
+      "message": "В отличие от обычной новой вкладки, Speed Dial 2 позволяет сохранять любое количество веб-сайтов и даже объединять их в группы!"
+   },
+   "welcome_2_h1": {
+      "message": "Закладка - Ваш любимый веб-сайт"
+   },
+   "welcome_3_1": {
+      "message": "Создание новой заклдаки всегда происходит в один клик"
+   },
+   "welcome_3_2": {
+      "message": "Нажмите на кнопку (+), когда находитесь на странице новой вкладки или мгновенно сохраните текущую страницу одним щелчком по кнопке на панели инструментов браузера."
+   },
+   "welcome_3_h1": {
+      "description": "How to create new bookmark",
+      "message": "Создание новой заклдаки"
+   },
+   "welcome_4_1": {
+      "message": "Нажмите правой кнопкой мыши (или Cmd + Click) на закладку, чтобы изменить ее настройки."
+   },
+   "welcome_4_h1": {
+      "description": "How to edit a bookmark",
+      "message": "Редактирование закладки"
+   },
+   "welcome_6_1": {
+      "description": "Please mind and keep tags",
+      "message": "Боковая панель - особенная функция нашего расширения. Она дает Вам доступ к Недавно закрытым вкладкам, списку установленных приложений или закладкам Google Chrome. Вы можете включить и выключить эту функцию в Параметрах. Чтобы открыть боковую панель, подведите курсор к правому краю экрана."
+   },
+   "welcome_6_h1": {
+      "message": "Боковая панель."
+   },
+   "welcome_7_1": {
+      "message": "Speed ​​Dial 2 дает вам ценную информацию о том, как Вы проводите свой день, показывая Вам сайты, которые Вы любите посещать утром, днем ​​или ночью. Вы сможете узнать больше о своих привычках!"
+   },
+   "welcome_7_h1": {
+      "message": "Узнайте больше о своих привычках"
+   },
+   "welcome_9_1": {
+      "description": "Please mind and keep tags",
+      "message": "Преобразите Вашу новую вкладку с помощью красивых тем, созданных дизайнерами со всего мира."
+   },
+   "welcome_9_h1": {
+      "message": "Преобразите новую вкладку с помощью красивых тем!"
+   },
+   "welcome_back": {
+      "message": "назад"
+   },
+   "welcome_continue": {
+      "message": "Продолжить"
+   },
+   "welcome_finish": {
+      "description": "e.g. Finish setting up your account",
+      "message": "Закончить"
+   },
+   "welcome_message": {
+      "description": "Never translate application name",
+      "message": "Добро пожаловать в Speed Dial 2 Pro!"
+   },
+   "welcome_pagetitle": {
+      "message": "Добро пожаловать в Speed dial 2!"
+   },
+   "welcome_signup_h1": {
+      "message": "Создать аккаунт Speed Dial 2"
+   },
+   "welcome_skip_the_tour": {
+      "description": "Skip introduction section",
+      "message": "Пропустить приветствие"
+   },
+   "white": {
+      "description": "White background color",
+      "message": "Белый"
+   },
+   "width": {
+      "message": "Ширина"
+   },
+   "year": {
+      "message": "год"
+   },
+   "your_email_address": {
+      "message": "Ваш эл. адрес"
+   }
+}

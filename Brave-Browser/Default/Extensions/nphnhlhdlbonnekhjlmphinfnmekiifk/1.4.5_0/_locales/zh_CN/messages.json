@@ -1,0 +1,197 @@
+{
+   "appDescription": {
+      "message": "重新实现滚动条，简约设计，悬浮显示"
+   },
+   "appName": {
+      "message": "隐形滚动条"
+   },
+   "articles": {
+      "message": "收藏的文章"
+   },
+   "cancel": {
+      "message": "取消"
+   },
+   "cant_use_custom_scroll_bar": {
+      "message": "当前页面不支持使用自定义滚动条（如果是在本扩展安装之前打开的普通网页，请刷新后重试）"
+   },
+   "change_scroll_bar_color": {
+      "message": "更改右侧滚动条样式"
+   },
+   "change_top_progress_bar_color": {
+      "message": "更改顶部滚动条颜色"
+   },
+   "click_to_open_reading_model": {
+      "message": "点击开启阅读模式"
+   },
+   "click_to_switch_scroll_bar_type": {
+      "message": "点击切换滚动条类型"
+   },
+   "click_top_progress_to_change": {
+      "message": "请点击网页上的顶部滚动条更改"
+   },
+   "color": {
+      "message": "颜色"
+   },
+   "confirm": {
+      "message": "确认"
+   },
+   "delete": {
+      "message": "删除"
+   },
+   "developer_space": {
+      "message": "开发者小屋"
+   },
+   "developer_weibo": {
+      "message": "分享 隐形滚动条"
+   },
+   "fail_get_article_data": {
+      "message": "抱歉，新文章无法再使用阅读模式！"
+   },
+   "fail_network_connection": {
+      "message": "哦，网络连接失败"
+   },
+   "install": {
+      "message": "了解"
+   },
+   "is_display_points_num": {
+      "message": "显示标记节点数目角标"
+   },
+   "is_fixed_scroll_bar": {
+      "message": "固定显示滚动条"
+   },
+   "is_need_scrollbar": {
+      "message": "鼠标移到最右侧时显示滚动条"
+   },
+   "is_not_used_custom_scroll_bar": {
+      "message": "当前网页正在使用「原生滚动条」，如需启用自定义滚动条，请点击上方圆形按钮开启自定义滚动条"
+   },
+   "is_reading_mode_auto_full_screen": {
+      "message": "网页开启阅读模式时自动全屏"
+   },
+   "is_reading_model": {
+      "message": "现在已经是阅读模式"
+   },
+   "is_top_progress_auto_hide": {
+      "message": "滚动结束后自动隐藏顶部进度条"
+   },
+   "is_use_mark_point": {
+      "message": "启用双击网页标记节点"
+   },
+   "is_use_side_click": {
+      "message": "启用屏幕两侧边缘点击功能"
+   },
+   "is_used_custom_scroll_bar": {
+      "message": "当前网页已启用「自定义滚动条」，如需使用原生滚动条，请点击上方圆形按钮关闭自定义滚动条"
+   },
+   "lang": {
+      "message": "zh_cn"
+   },
+   "mark_current_node": {
+      "message": "标记当前节点"
+   },
+   "mark_point": {
+      "message": "双击网页可以标记节点，按 Ctrl 键可切换"
+   },
+   "no_article": {
+      "message": "还没有收藏的文章"
+   },
+   "no_page": {
+      "message": "还没有标记的页面"
+   },
+   "no_point": {
+      "message": "当前页面没有标记的节点，双击可标记"
+   },
+   "not_support_mark": {
+      "message": "当前页面不支持标记节点"
+   },
+   "not_support_reading_model": {
+      "message": "当前页面不支持阅读模式"
+   },
+   "notice_change_color": {
+      "message": "点击右侧的色块可选择颜色"
+   },
+   "notice_to_fix_scrollbar": {
+      "message": "双击滑块可固定"
+   },
+   "opacity": {
+      "message": "透明度"
+   },
+   "open_reading_model": {
+      "message": "开启阅读模式 (仅适用于文章正文网页)"
+   },
+   "pages": {
+      "message": "标记的页面"
+   },
+   "permission_tip_1": {
+      "message": "为了能更好的实现功能（比如，切换标签时正确显示页面标记的节点数目等），需要获得 Tabs 权限，你可以点击 "
+   },
+   "permission_tip_2": {
+      "message": "这里"
+   },
+   "permission_tip_3": {
+      "message": " 授予"
+   },
+   "points": {
+      "message": "标记的节点"
+   },
+   "reload_page": {
+      "message": "在扩展安装之前打开的网页需要刷新后方可使用扩展功能"
+   },
+   "review": {
+      "message": "评价"
+   },
+   "scroll_tip_1": {
+      "message": "点击网页最右侧的"
+   },
+   "scroll_tip_2": {
+      "message": "蓝色"
+   },
+   "scroll_tip_3": {
+      "message": "红色"
+   },
+   "scroll_tip_4": {
+      "message": "区域（消失后依然可用）可以让页面快速回到"
+   },
+   "scroll_tip_5": {
+      "message": "底部"
+   },
+   "scroll_tip_6": {
+      "message": "顶部"
+   },
+   "scroll_tip_to_bottom": {
+      "message": "点击网页最右侧的上 1/3 部分可以让页面快速回到底部"
+   },
+   "scroll_tip_to_top": {
+      "message": "点击网页最右侧的下 2/3 部分可以让页面快速回到顶部"
+   },
+   "scrollbar_type": {
+      "message": "滚动条类型"
+   },
+   "scrollbar_will_disappear": {
+      "message": "扩展启用后，网页的滚动条将消失，同时上方会有更为直观的浏览位置显示"
+   },
+   "setting": {
+      "message": "功能设置"
+   },
+   "show_more": {
+      "message": "显示更多"
+   },
+   "this_article": {
+      "message": "这一篇"
+   },
+   "to_open_read_model": {
+      "message": "点击顶部的“圆形 R”图标可以开启阅读模式 (仅适用于文章正文网页，比如 "
+   },
+   "turn_page": {
+      "message": "点击网页最左侧的上下部分可以快速翻页"
+   },
+   "usage": {
+      "message": "使用提示"
+   },
+   "vein": {
+      "message": "纹理"
+   },
+   "wait_for_get_article_data": {
+      "message": "数据处理中，请稍候"
+   }
+}

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>更新说明 | 隐形滚动条</title>
+	<link rel="stylesheet" href="css.css">
+	<!-- <script src="vue.min.js"></script> -->
+	<style>
+	::-webkit-scrollbar{width:0px;height:0px}
+	::-webkit-scrollbar-button:vertical{display:none}
+	/*滚动槽*/
+	::-webkit-scrollbar-track:vertical{background-color:transparent}
+	/*滚动块*/
+    ::-webkit-scrollbar-thumb:vertical{background-color:#eee;border-radius:0px}
+	::-webkit-scrollbar-thumb:vertical:hover{background-color:#ccc}
+	::-webkit-scrollbar-track-piece{background:transparent;border-radius:0px}
+	::-webkit-scrollbar-corner:vertical{background-color:#535353}
+	::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00}
+	
+	body
+	{
+	background:#666699;
+	}
+	
+	#main
+	{
+	margin:auto;
+	width:51%;
+	min-height:100vh;
+	box-sizing:border-box;
+	padding:0px 36px 50px;
+	font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	background:#fff;
+	}
+	
+	#main p
+	{
+	color:#333;
+	font-size:16px;
+	line-height:2em;
+	text-align:justify;
+	}
+	
+	#main .head
+	{
+	padding:25px 0 20px;
+	font-size:34px;
+	font-weight:100;
+	color:#000;
+	}
+	
+	#main .title_s
+	{
+	margin-bottom:4px;
+	display:flex;
+	align-items:center;
+	}
+	
+	#main .title_s:nth-of-type(n+2)
+	{
+	margin-top:20px;
+	}
+	
+	#main .title_s div
+	{
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:6px 0 6px 10px;
+	border-color:transparent transparent transparent #666;
+	}
+	
+	#main .title_s p
+	{
+	margin-left:6px;
+	color:#000;
+	font-size:20px;
+	font-weight:300;
+	}
+	
+	#main .update p
+	{
+	margin-bottom:10px;
+	line-height:1.9em;
+	background:#fff;
+	}
+	
+	#main .update p .hidden
+	{
+	font-size:10px;
+	color:#444;
+	background-color:#444;
+	}
+	
+	#main .language_block, #main .for_chrome
+	{
+	display:none;
+	}
+	
+	#main span
+	{
+	font-weight:bold;
+	}
+	
+	#main a
+	{
+	color:#337acf;
+	text-decoration:underline;
+	}
+	
+	#main img
+	{
+	margin:8px auto;
+	display:block;
+	max-width:100%;
+	cursor:pointer;
+	}
+	
+	#main #footer
+	{
+	margin:80px auto 0px;
+	width:80px;
+	height:1px;
+	background:#000;
+	}
+	
+	canvas
+	{
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	z-index:-1;
+	}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<p class="head">更新说明</p>
+		
+		<div class="title_s">
+		    <div></div>
+	        <p>本次更新内容如下：</p>
+		</div>
+		<div class="update lists">
+		    <div class="language_block zh">
+			    <p>1. 修复在 Vivaldi 浏览器中无法打开扩展弹窗页面的问题；<p>
+			    <p>2. 支持更改右侧滚动条颜色，可以在扩展弹窗页面“功能设置”中进行更改。<p>
+			</div>
+			
+			<div class="language_block en">
+			    <p>Changing the color of the right scroll bar is supported. You can change it in Function Settings.</p>
+			</div>
+			
+		    <!-- <div class="language_block zh">
+			    <p>修复了可能无法设置顶部进度条颜色的bug<p>
+			</div>
+			
+			<div class="language_block en">
+			    <p>Fixed a bug where the color of the top progress bar might not be set. </p>
+			</div> -->
+		
+		    <!-- <div class="language_block zh">
+			    <p>修复了 Chrome 浏览器有时候会打开扩展内的 scroll_bar.html 的问题<p>
+			</div>
+			
+			<div class="language_block en">
+			    <p>Fixed a problem that Chrome browser sometimes opened scroll_bar.html in the extension. </p>
+			</div> -->
+			
+			<!-- <div class="language_block zh">
+			    <p>解决了部分网站内容显示不正常的问题，目前“中国大学MOOC”课程详情页面的显示已经正常了，如果你还发现在其他页面存在问题，请发送邮件至 pinbo252@gmail.com 进行反馈（建议附上网址及截图）<p>
+			</div>
+			
+			<div class="language_block en">
+			    <p>The problem of abnormal content display in some websites has been solved. If you find any problems in other pages, please send an email to pinbo252@gmail.com for feedback (it is recommended to attach the website address and screenshot). </p>
+			</div> -->
+			
+			<!-- <p>这次的更新有点特别</p>
+			<p>因为允许滚动条出现可以让这个插件被更多的用户接受</p>
+			<p>相比而言，此前完全不希望滚动条存在的策略就显得有些激进</p>
+			<p>我自己是不喜欢滚动条的，也正是因为这样才开发了这个插件</p>
+			<p>如果不是有用户反馈</p>
+			<p>这个插件可能永远也不会支持自定义滚动条是否出现</p>
+			<p>但我想这应该就是作品与产品的不同吧</p>
+			<p>当要面向外界开放的时候就必须要以更大众的视角去思考</p> -->
+			
+			<!-- <p>最后，附上一张随手拍</p>
+			<img class="app_img" src="https://wx2.sinaimg.cn/large/63624f9cgy1ggpdykrwv8j23342bc7wm.jpg" alt="" title="点击查看大图"> -->
+			<!-- <p>这个插件对你有帮助吗，能不能麻烦<a href="https://weibo.com/1667387292/Ja0kPDKSj?type=comment#_rnd1600350560564">转发</a>支持一下呢？谢谢</p> -->
+			
+			<!-- <p>移除了“开启阅读模式”的右键菜单。很抱歉，提供阅读模式的数据处理的第三方服务出现了故障，故障期间，我试图发送邮件了解情况，但迟迟未收到回复，故障也未得到修复，所以，阅读模式功能将下线（之前已收藏的文章不受影响，可以正常打开阅读）。为实现平滑过渡，这里向需要使用阅读模式的同学推荐由其他开发者提供的“简悦 - SimpRead”，安装链接：<a href="https://chrome.google.com/webstore/detail/simpread-reader-view/ijllcpnolfcooahcekpamkbidhejabll" target="_blank">Chrome</a>、<a href="https://microsoftedge.microsoft.com/addons/detail/%E7%AE%80%E6%82%A6-simpread/clgdhlhfiocphghdkdbgdlmfaafccfmc?hl=zh-CN" target="_blank">Edge</a></p>
+			<p>隐形滚动条的其他功能不受影响，并将持续更新！</p>
+			<p>做了一次减法，再做一个加法：开发者小屋上新，新增剪贴板应用 Copy X，可以持久保存复制的文字，还能进行数据预处理，欢迎大家使用！安装链接：<a href="https://chrome.google.com/webstore/detail/copy-x/pljacoeopccbcpnkgpbjmcckfehjjpbb" target="_blank">Chrome</a>、<a href="https://microsoftedge.microsoft.com/addons/detail/copy-x/lngaifjohmlfigcnelbldnaoipdakeok?hl=zh-CN" target="_blank">Edge</a></p>
+			<p>--------</p>
+			<p>我的另外一个插件“卡片书签”也欢迎大家使用：<a href="https://chrome.google.com/webstore/detail/card-bookmarks/dkeildaicdhjaboibehldcancpkafnfl" target="_blank">Chrome</a>、<a href="https://microsoftedge.microsoft.com/addons/detail/pohdfciklomffdjobmihohbdfdpkecli" target="_blank">Edge</a></p> -->
+			
+			<!-- <p>1. 优化了计算自定义滚动条滑块的位置及高度数据的相关程序； </p>
+			<p>2. 加入了一个新年彩蛋(需启用自定义滚动条)，祝大家新年快乐！特别说明：新年彩蛋只会在元旦当天出现，如果你并不喜欢，还请见谅……</p> -->
+			
+			<!-- <p>1. 支持为每个网站设置是否启用自定义滚动条，如果不启用，将使用原生滚动条；</p>
+			<p class="for_chrome">2. 上次更新加入了新年彩蛋，这里补充一下，需要启用自定义滚动条才能出现哦；</p>
+			
+			<p>--------------</p>
+			<p>一些网页的页面内滚动条需要进行特别适配才能准确计算滚动块的位置和高度，但目前隐形滚动条的策略是使用通用算法计算页面整体的滚动条数据，所以会出现在这一类网页上自定义滚动条数据不准确的情况，如果你需要在这一类网页上使用滚动条，建议使用原生滚动条。</p> -->
+		</div>
+		
+		<div id="footer"></div>
+	</div>
+	
+	<canvas width="0" height="0" ></canvas>
+</body>
+    <script src="update_desc.js"></script>
+</html>

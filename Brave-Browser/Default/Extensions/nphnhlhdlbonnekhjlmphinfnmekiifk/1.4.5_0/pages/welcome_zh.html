@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome | 隐形滚动条</title>
+	<link rel="stylesheet" href="css.css">
+	<!-- <script src="vue.min.js"></script> -->
+	<style>
+	::-webkit-scrollbar{width:0px;height:0px}
+	::-webkit-scrollbar-button:vertical{display:none}
+	/*滚动槽*/
+	::-webkit-scrollbar-track:vertical{background-color:transparent}
+	/*滚动块*/
+    ::-webkit-scrollbar-thumb:vertical{background-color:#eee;border-radius:0px}
+	::-webkit-scrollbar-thumb:vertical:hover{background-color:#ccc}
+	::-webkit-scrollbar-track-piece{background:transparent;border-radius:0px}
+	::-webkit-scrollbar-corner:vertical{background-color:#535353}
+	::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00}
+	
+	body
+	{
+	background:#666699;
+	}
+	
+	#main
+	{
+	margin:auto;
+	width:51%;
+	min-height:100vh;
+	box-sizing:border-box;
+	padding:0px 36px 50px;
+	font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	background:#fff;
+	}
+	
+	#main p
+	{
+	color:#333;
+	font-size:17px;
+	line-height:2em;
+	text-align:justify;
+	}
+	
+	#main .head
+	{
+	display:flex;
+	align-items:center;
+	padding:25px 0 70px;
+	}
+	
+	#main .head p
+	{
+	font-size:34px;
+	font-weight:100;
+	color:#000;
+	}
+	
+	#main .head img
+	{
+	display:block;
+	margin-left:12px;
+	width:30px;
+	}
+	
+	#main .li
+	{
+	position:relative;
+	margin-top:14px;
+	padding-left:18px;
+	color:#333;
+	font-size:17px;
+	line-height:2em;
+	text-align:justify;
+	}
+	
+	#main .li::before
+	{
+	content:"";
+	position:absolute;
+	top:11px;
+	left:0;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-color:transparent transparent transparent #333;
+	border-width:6px 0 6px 9px;
+	}
+	
+	#main .normal
+	{
+	margin-top:14px;
+	}
+	
+	#main p span, #main .li span
+	{
+	font-weight:600;
+	}
+	
+	#main #footer
+	{
+	margin:80px auto 0px;
+	width:70px;
+	height:2px;
+	background:#666699;
+	}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div class="head">
+		    <p>欢迎使用「隐形滚动条」</p>
+			<img src="../icons/icon5_no.png" alt="">
+		</div>
+		<p>扩展启用后，网页的<span>原生滚动条将消失，更换为更加简约的浮动滚动条</span>。更多个性化选项（更改滚动条颜色等）请点击上方的扩展图标后查看“<span>功能设置</span>选项”，同时还带来了如下功能：</p>
+		<div class="li">点击网页最右侧，可以快速<span>滚动</span>到网页顶部或底部；</div>
+		<div class="li">点击网页最左侧，可以快速上下<span>翻页</span>；</div>
+		<div class="li">不显示右侧滚动条时，网页顶端会有一条细线，用于显示当前的浏览位置；</div>
+		<div class="li">双击网页可以<span>标记当前的浏览位置</span>，同时会自动生成一份目录，点击即可直达内容区域，也可以按下 Ctrl 来切换；</div>
+		<p class="normal">注：在本扩展安装之前打开的网页需要<span>刷新</span>后方可使用扩展功能。</p>
+		<div id="footer"></div>
+	</div>
+</body>
+    <script src="welcome.js"></script>
+</html>

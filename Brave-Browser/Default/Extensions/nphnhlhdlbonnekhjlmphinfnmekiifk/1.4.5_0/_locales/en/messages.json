@@ -1,0 +1,197 @@
+{
+   "appDescription": {
+      "message": "Re-realize scrollbar, simple design and floating display"
+   },
+   "appName": {
+      "message": "Invisible scrollbar"
+   },
+   "articles": {
+      "message": "Collected articles"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "cant_use_custom_scroll_bar": {
+      "message": "The current page does not support the use of custom scrollbar (If the webpage was opened before the installation of this extension, please refresh and try again)"
+   },
+   "change_scroll_bar_color": {
+      "message": "Change the scroll bar style"
+   },
+   "change_top_progress_bar_color": {
+      "message": "Change the color of the top progress bar"
+   },
+   "click_to_open_reading_model": {
+      "message": "Click to open the reading mode"
+   },
+   "click_to_switch_scroll_bar_type": {
+      "message": "Click to switch scrollbar types"
+   },
+   "click_top_progress_to_change": {
+      "message": "Click the top scrollbar to change"
+   },
+   "color": {
+      "message": "Color"
+   },
+   "confirm": {
+      "message": "Confirm"
+   },
+   "delete": {
+      "message": "Delete"
+   },
+   "developer_space": {
+      "message": "Developer space"
+   },
+   "developer_weibo": {
+      "message": "Repost Weibo to support."
+   },
+   "fail_get_article_data": {
+      "message": "Failed, new articles can no longer use reading mode!"
+   },
+   "fail_network_connection": {
+      "message": "Oh, the network connection failed"
+   },
+   "install": {
+      "message": "Learn"
+   },
+   "is_display_points_num": {
+      "message": "Displays corner markers"
+   },
+   "is_fixed_scroll_bar": {
+      "message": "Fixed display scrollbar"
+   },
+   "is_need_scrollbar": {
+      "message": "Show scrollbar when the mouse moves to the far right"
+   },
+   "is_not_used_custom_scroll_bar": {
+      "message": "The current webpage is using the 「native scroll bar」. To use the custom scrollbar, please click the upper circular button."
+   },
+   "is_reading_mode_auto_full_screen": {
+      "message": "Reading mode automatic full screen"
+   },
+   "is_reading_model": {
+      "message": "Now in reading mode."
+   },
+   "is_top_progress_auto_hide": {
+      "message": "Automatically hide the top progress bar after scrolling"
+   },
+   "is_use_mark_point": {
+      "message": "Enable Marking node"
+   },
+   "is_use_side_click": {
+      "message": "Enable Side click function"
+   },
+   "is_used_custom_scroll_bar": {
+      "message": "The current webpage is using the 「custom scroll bar」. To use the native scrollbar, please click the upper circular button."
+   },
+   "lang": {
+      "message": "en"
+   },
+   "mark_current_node": {
+      "message": "Mark current node"
+   },
+   "mark_point": {
+      "message": "Double-click the webpage to mark the node, and press Ctrl to switch."
+   },
+   "no_article": {
+      "message": "No record"
+   },
+   "no_page": {
+      "message": "No record"
+   },
+   "no_point": {
+      "message": "No record, double-click to mark"
+   },
+   "not_support_mark": {
+      "message": "The current page is not supported"
+   },
+   "not_support_reading_model": {
+      "message": "The current page is not supported"
+   },
+   "notice_change_color": {
+      "message": "Click on the color block on the right to select the color."
+   },
+   "notice_to_fix_scrollbar": {
+      "message": "Double-click the slider to fix."
+   },
+   "opacity": {
+      "message": "Transparency"
+   },
+   "open_reading_model": {
+      "message": "Open reading mode(Article page only)"
+   },
+   "pages": {
+      "message": "Marked pages"
+   },
+   "permission_tip_1": {
+      "message": "In order to better realize the function (for example, the number of nodes that correctly display the page mark when switching labels), you need to obtain Tabs permission, you can click "
+   },
+   "permission_tip_2": {
+      "message": "here"
+   },
+   "permission_tip_3": {
+      "message": " to grant it."
+   },
+   "points": {
+      "message": "Marked nodes"
+   },
+   "reload_page": {
+      "message": "Web pages opened before the extension installation need to be refreshed before the extension function can be used."
+   },
+   "review": {
+      "message": "Review"
+   },
+   "scroll_tip_1": {
+      "message": "Click on the "
+   },
+   "scroll_tip_2": {
+      "message": "blue"
+   },
+   "scroll_tip_3": {
+      "message": "red "
+   },
+   "scroll_tip_4": {
+      "message": "on the far right of the page (still available after disappearing) to quickly return the page to the "
+   },
+   "scroll_tip_5": {
+      "message": "bottom"
+   },
+   "scroll_tip_6": {
+      "message": "top"
+   },
+   "scroll_tip_to_bottom": {
+      "message": "Click on the top 1/3 of the rightmost part of the page to quickly return the page to the bottom."
+   },
+   "scroll_tip_to_top": {
+      "message": "Click on the bottom 2/3 of the rightmost part of the page to quickly return the page to the top."
+   },
+   "scrollbar_type": {
+      "message": "Scrollbar Type"
+   },
+   "scrollbar_will_disappear": {
+      "message": "After the extension is enabled, the scrollbar of the webpage will disappear and a more intuitive browsing position will be displayed at the top."
+   },
+   "setting": {
+      "message": "Setting"
+   },
+   "show_more": {
+      "message": "Show_more"
+   },
+   "this_article": {
+      "message": "this one"
+   },
+   "to_open_read_model": {
+      "message": "Click the 'circle R' icon at the top to open the reading mode (only applicable to the article pages, such as "
+   },
+   "turn_page": {
+      "message": "Click on the left-most upper and lower parts of the webpage to quickly turn pages."
+   },
+   "usage": {
+      "message": "Use tips"
+   },
+   "vein": {
+      "message": "Vein"
+   },
+   "wait_for_get_article_data": {
+      "message": "Please wait..."
+   }
+}

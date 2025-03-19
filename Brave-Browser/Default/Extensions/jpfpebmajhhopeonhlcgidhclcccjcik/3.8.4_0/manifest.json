@@ -1,0 +1,38 @@
+{
+   "action": {
+      "default_icon": {
+         "19": "icons/19.png",
+         "38": "icons/38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_appName__"
+   },
+   "background": {
+      "module": true,
+      "service_worker": "js/background.js"
+   },
+   "chrome_url_overrides": {
+      "newtab": "override.html"
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'; worker-src 'self'; img-src 'self' * data: file://*;"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "homepage_url": "https://www.speeddial2.com",
+   "host_permissions": [ "\u003Call_urls>", "*://*/*" ],
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0dzy92u3hPDJcwwpnwlQMF174YLL08puWDfP31psj2FlwmeuHF9Pg2LXBSXaUn0GKwMhwtueiNuwXE3MPPux7NfcHWDOsQ6jPdssRs2ySxX+6jUoNVdO3Suxy5eZHt1J+z8J04rw+87h96lgYYFbrKZFHGPKwEKgorv2Ft+Qe5wIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "optional_permissions": [ "sessions", "bookmarks" ],
+   "options_page": "override.html#/?preferences=true",
+   "permissions": [ "topSites", "tabs", "unlimitedStorage", "storage", "contextMenus", "alarms", "favicon" ],
+   "short_name": "__MSG_appShortName__",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "3.8.4"
+}

@@ -1,0 +1,1229 @@
+{
+   "account": {
+      "message": "Account"
+   },
+   "add": {
+      "message": "Add"
+   },
+   "afternoon": {
+      "message": "Afternoon"
+   },
+   "agree_to_privacy_policy": {
+      "message": "I have read and agree to the \u003Ca href='https://www.speeddial2.com/privacy-policy' target='_blank'>Privacy Policy\u003C/a>."
+   },
+   "agree_to_privacy_policy_error": {
+      "message": "You have to agree to the privacy policy to continue"
+   },
+   "alphabetical": {
+      "message": "A–Z"
+   },
+   "already_have_an_account": {
+      "message": "Already have an account?"
+   },
+   "appDescription": {
+      "description": "Never translate application name",
+      "message": "Speed Dial 2 is an easy-to-use extension that lets you save and organize your most visited websites and customize your new tab page."
+   },
+   "appName": {
+      "description": "App name - never translate application name",
+      "message": "Speed Dial 2 New tab"
+   },
+   "appShortName": {
+      "description": "App name - never translate application name",
+      "message": "Speed Dial 2"
+   },
+   "applications": {
+      "message": "Applications"
+   },
+   "apps_app_uninstalled": {
+      "message": "Application was uninstalled successfully"
+   },
+   "apps_do_you_want_to_uninstall": {
+      "message": "Do you realy want to uninstall application?"
+   },
+   "auto": {
+      "message": "Auto"
+   },
+   "back": {
+      "message": "Back"
+   },
+   "back_to_bookmarks": {
+      "message": "Back to my bookmarks"
+   },
+   "background": {
+      "message": "Background"
+   },
+   "background_color": {
+      "message": "Background color"
+   },
+   "bookmark": {
+      "message": "Bookmark"
+   },
+   "bookmarks": {
+      "message": "Bookmarks"
+   },
+   "border": {
+      "message": "Border"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "center": {
+      "description": "Alight to center",
+      "message": "Center"
+   },
+   "choose_password": {
+      "message": "Choose password"
+   },
+   "click_here_to_start": {
+      "message": "Click here to start"
+   },
+   "click_to_confirm_background": {
+      "message": "Click to confirm this background"
+   },
+   "close": {
+      "message": "Close"
+   },
+   "close_message": {
+      "description": "Close this message",
+      "message": "Close message"
+   },
+   "color": {
+      "message": "Color"
+   },
+   "coming_soon": {
+      "message": "Coming soon"
+   },
+   "compact_layout": {
+      "description": "A more compact layout option",
+      "message": "Compact layout"
+   },
+   "contain": {
+      "description": "Do not crop image",
+      "message": "Fit"
+   },
+   "continue": {
+      "message": "Continue"
+   },
+   "continue_without_account": {
+      "message": "Continue without account"
+   },
+   "copied": {
+      "message": "Copied"
+   },
+   "copy_link": {
+      "message": "Copy link"
+   },
+   "copy_url": {
+      "message": "Copy URL"
+   },
+   "cover": {
+      "description": "Cover entire screen with image",
+      "message": "Cover"
+   },
+   "custom_css_add": {
+      "message": "Add custom CSS"
+   },
+   "custom_css_enter": {
+      "message": "Enter your custom CSS without the &lt;style&gt; tag"
+   },
+   "custom_css_text": {
+      "message": "Please note that this option is for advanced users only, don't write anything here unless you know what you're doing :)"
+   },
+   "customize_background_color": {
+      "message": "Customize background color"
+   },
+   "customize_dark_theme": {
+      "message": "Customize Dark Theme"
+   },
+   "customize_light_theme": {
+      "message": "Customize Light Theme"
+   },
+   "dark": {
+      "description": "Dark background color",
+      "message": "Dark"
+   },
+   "default": {
+      "message": "default"
+   },
+   "delete": {
+      "message": "Delete"
+   },
+   "disabled": {
+      "message": "Disabled"
+   },
+   "dont_repeat": {
+      "description": "Do not repeat background image",
+      "message": "Don't repeat"
+   },
+   "edit": {
+      "message": "Edit"
+   },
+   "email": {
+      "message": "Email"
+   },
+   "enter_password": {
+      "message": "Enter password"
+   },
+   "enter_your_email": {
+      "message": "Enter your email"
+   },
+   "error_enter_email": {
+      "message": "Please enter your e-mail."
+   },
+   "error_enter_password": {
+      "message": "Please enter your password."
+   },
+   "error_file_too_large": {
+      "message": "Sorry, this file too large."
+   },
+   "error_invalid_email": {
+      "message": "Please enter valid e-mail address."
+   },
+   "error_payment": {
+      "message": "There was an error while processing your payment. No payment was made."
+   },
+   "evening": {
+      "message": "Evening"
+   },
+   "font_bold": {
+      "message": "Bold"
+   },
+   "font_bold_italic": {
+      "message": "Bold Italic"
+   },
+   "font_italic": {
+      "message": "Italic"
+   },
+   "font_normal": {
+      "message": "Normal"
+   },
+   "forgot_password": {
+      "message": "Forgot your password?"
+   },
+   "general": {
+      "message": "General"
+   },
+   "group": {
+      "message": "Group"
+   },
+   "groups": {
+      "message": "Groups"
+   },
+   "help": {
+      "message": "Help"
+   },
+   "high": {
+      "description": "High quality",
+      "message": "High"
+   },
+   "home": {
+      "message": "Home"
+   },
+   "horizontally": {
+      "description": "Repeat horizontally",
+      "message": "Horizontally"
+   },
+   "i_understand": {
+      "description": "I understan and I wish to proceed",
+      "message": "I understand"
+   },
+   "image_hosting_providers": {
+      "message": "Tip: You can use image hosting providers (e.g. imgur.com) to upload a background image."
+   },
+   "inside": {
+      "message": "Inside"
+   },
+   "large": {
+      "message": "Large"
+   },
+   "last_synchronization": {
+      "message": "last synchronization"
+   },
+   "learn_about_chrome_apps": {
+      "message": "Learn more about Chrome Apps"
+   },
+   "learn_more": {
+      "message": "Learn more"
+   },
+   "left": {
+      "description": "Alight to left",
+      "message": "Left"
+   },
+   "light": {
+      "message": "Light"
+   },
+   "low": {
+      "description": "Low quality",
+      "message": "Low"
+   },
+   "medium": {
+      "description": "Medium quality",
+      "message": "Medium"
+   },
+   "mobile_app": {
+      "message": "Mobile app"
+   },
+   "mobile_app_description": {
+      "message": "Easily access and save bookmarks while on the go."
+   },
+   "morning": {
+      "message": "Morning"
+   },
+   "move_to": {
+      "message": "Move to"
+   },
+   "name": {
+      "message": "Name"
+   },
+   "new": {
+      "description": "New feature badge",
+      "message": "New"
+   },
+   "new_tab": {
+      "description": "This is New tab page of Google Chrome",
+      "message": "New tab"
+   },
+   "newest_first": {
+      "message": "Newest first"
+   },
+   "newtab_add_dial_error": {
+      "message": "Please fill all required fields."
+   },
+   "newtab_add_new_dial": {
+      "message": "Add new bookmark"
+   },
+   "newtab_app_launch": {
+      "message": "Run application"
+   },
+   "newtab_click_to_learn_more": {
+      "message": "Click here to learn more."
+   },
+   "newtab_create_group": {
+      "description": "Create new group (a list of bookmarks)",
+      "message": "Create new group"
+   },
+   "newtab_customize_thumbnail": {
+      "description": "Customize thumbnail image",
+      "message": "Customize the thumbnail"
+   },
+   "newtab_customize_thumbnail_text": {
+      "message": "Thumbnail will be captured once you open the page for the first time. Alternatively, you can select from logos of most popular websites, upload image from your computer or enter URL of an image."
+   },
+   "newtab_dial_remove_warning": {
+      "message": "Do you really want to remove this bookmark?"
+   },
+   "newtab_dial_saved": {
+      "message": "Bookmark saved."
+   },
+   "newtab_edit_dial": {
+      "message": "Edit bookmark"
+   },
+   "newtab_edit_group": {
+      "message": "Edit group"
+   },
+   "newtab_enter_group_name": {
+      "description": "Error: Please enter a name of new group",
+      "message": "Please enter a name"
+   },
+   "newtab_enter_name": {
+      "message": "Enter title"
+   },
+   "newtab_feature_locked": {
+      "description": "Available only to premium users",
+      "message": "This feature is available only for Pro users."
+   },
+   "newtab_group_edited": {
+      "description": "Settings of a group (a list of bookmarks) has been saved",
+      "message": "Group has been updated."
+   },
+   "newtab_group_remove_warning": {
+      "description": "Mind and keep tag",
+      "message": "This will remove selected group with all bookmarks inside. Do you wish to continue?"
+   },
+   "newtab_group_removed": {
+      "description": "Group (a list of bookmarks) has been removed",
+      "message": "Group has been removed."
+   },
+   "newtab_homegroup": {
+      "message": "This is your primary group"
+   },
+   "newtab_open_all_links": {
+      "description": "Open all bookmarks within group",
+      "message": "Open all bookmarks"
+   },
+   "newtab_open_in_new_tab": {
+      "description": "Open bookmark in new tab in a browser",
+      "message": "Open in new tab"
+   },
+   "newtab_reload_thumbnail": {
+      "description": "Reload thumbnail image",
+      "message": "Reload thumbnail"
+   },
+   "newtab_remove_group": {
+      "message": "Remove group"
+   },
+   "newtab_remove_question": {
+      "message": "Remove bookmark"
+   },
+   "newtab_search_your_bookmarks": {
+      "description": "Search within your bookmarks",
+      "message": "Search your bookmarks"
+   },
+   "newtab_search_your_history": {
+      "description": "Search within your history",
+      "message": "Search your history"
+   },
+   "newtab_select_from_most_popular": {
+      "description": "Select site from the list of most popular websites",
+      "message": "Select from most popular websites"
+   },
+   "newtab_thumbnail_file": {
+      "message": "Choose file"
+   },
+   "newtab_thumbnail_image_url": {
+      "message": "Enter image URL"
+   },
+   "newtab_thumbnail_popular": {
+      "message": "Most popular websites"
+   },
+   "newtab_type_url": {
+      "message": "Type or paste URL"
+   },
+   "newtab_update_group": {
+      "message": "Update group"
+   },
+   "night": {
+      "message": "Night"
+   },
+   "none": {
+      "message": "None"
+   },
+   "oldest_first": {
+      "message": "Oldest first"
+   },
+   "options": {
+      "message": "Preferences"
+   },
+   "options_apps_show_panel": {
+      "description": "Show panel (toolbar) with applications",
+      "message": "Show panel with installed Applications?"
+   },
+   "options_apps_show_panel_help": {
+      "message": "You can show your installed Applications in standalone panel or in sidebar (see also 'Sidebar' section)."
+   },
+   "options_background_leave_empty": {
+      "message": "Leave empty for no background image"
+   },
+   "options_customize_background_color": {
+      "message": "Background color"
+   },
+   "options_customize_border_colors": {
+      "message": "Border color"
+   },
+   "options_customize_customize_colors": {
+      "message": "Customize colors"
+   },
+   "options_customize_font_face": {
+      "message": "Font face"
+   },
+   "options_customize_font_size": {
+      "message": "Font size"
+   },
+   "options_customize_font_style": {
+      "message": "Font style"
+   },
+   "options_customize_inner_background_color": {
+      "message": "Inner background color"
+   },
+   "options_customize_no_shadow": {
+      "message": "No shadow"
+   },
+   "options_customize_padding": {
+      "message": "Padding"
+   },
+   "options_customize_preview": {
+      "message": "Show preview"
+   },
+   "options_customize_rounded_corners": {
+      "message": "Rounded corners"
+   },
+   "options_customize_shadow": {
+      "description": "Visual shadow under element",
+      "message": "Shadow"
+   },
+   "options_customize_show_title": {
+      "message": "Show title of bookmarks?"
+   },
+   "options_customize_show_visits": {
+      "message": "Show number of visits?"
+   },
+   "options_customize_text_align": {
+      "message": "Align title"
+   },
+   "options_customize_title": {
+      "message": "Title"
+   },
+   "options_customize_title_color": {
+      "description": "Color of title",
+      "message": "Title color"
+   },
+   "options_dialog_center_vertically": {
+      "message": "Center vertically"
+   },
+   "options_dialog_columns": {
+      "message": "columns"
+   },
+   "options_dialog_more_options": {
+      "message": "More options..."
+   },
+   "options_dialog_open_help": {
+      "message": "Open help"
+   },
+   "options_dialog_open_stats": {
+      "message": "Open statistics"
+   },
+   "options_dialog_protect_your_data": {
+      "message": "Protect your data with sync & backup"
+   },
+   "options_dialog_set_columns": {
+      "description": "Number of columns in a row",
+      "message": "Number of columns"
+   },
+   "options_dialog_stats_and_help": {
+      "message": "Statistics and Help"
+   },
+   "options_dialog_sync_last": {
+      "description": "Last synchronization time",
+      "message": "Last sync"
+   },
+   "options_dialog_sync_ok": {
+      "description": "Ensures user's data is safe",
+      "message": "Your data is synchronized and backed up!"
+   },
+   "options_dialog_themes": {
+      "description": "Visual themes",
+      "message": "Themes"
+   },
+   "options_dialog_title": {
+      "message": "Preferences"
+   },
+   "options_export_download": {
+      "message": "Download as a file"
+   },
+   "options_export_result": {
+      "message": "These are your exported settings - copy and paste through 'Import settings' button to import your settings on different computer."
+   },
+   "options_export_text": {
+      "message": "This section allows you to easily import/export your bookmarks and setting to another computer.To export and backup your setting click Export settings button and copy all of generated text that appears."
+   },
+   "options_export_title": {
+      "description": "Export user's settings",
+      "message": "Export settings"
+   },
+   "options_import_result": {
+      "message": "Paste settings you previously exported through 'Export settings' option."
+   },
+   "options_import_text": {
+      "message": "To import your setting, press Import settings button and paste settings you previously saved. Note that importing your settings will erase all your bookmarks and saved options!"
+   },
+   "options_import_title": {
+      "message": "Import settings"
+   },
+   "options_import_warning_text_1": {
+      "message": "This operation will replace all your bookmarks and groups with new settings."
+   },
+   "options_import_warning_text_2": {
+      "message": "Besides changes to your local computer, importing your setting while you are signed in will cause bookmarks and groups to be replaced on our sync server too!"
+   },
+   "options_nav_apps": {
+      "message": "Applications"
+   },
+   "options_nav_background": {
+      "description": "Visual themes",
+      "message": "Themes"
+   },
+   "options_nav_backup": {
+      "message": "Import/export"
+   },
+   "options_nav_changelog": {
+      "message": "Changelog"
+   },
+   "options_nav_customize": {
+      "message": "Customize appearance"
+   },
+   "options_nav_options": {
+      "message": "Options"
+   },
+   "options_nav_sidebar": {
+      "description": "Toolbar at the side of the screen",
+      "message": "Sidebar"
+   },
+   "options_nav_sync": {
+      "description": "Synchronization and backup",
+      "message": "Sync and backup"
+   },
+   "options_nav_widgets": {
+      "message": "Widgets"
+   },
+   "options_options": {
+      "message": "Options"
+   },
+   "options_options_advanced_options": {
+      "message": "Advanced options"
+   },
+   "options_options_center_vertically": {
+      "description": "visually center",
+      "message": "Center rows vertically?"
+   },
+   "options_options_columns": {
+      "description": "Number of columns in a row",
+      "message": "Number of columns"
+   },
+   "options_options_columns_help": {
+      "message": "Number of bookmarks to be shown in one row. Number of rows is calculated automatically according to overall number of bookmarks."
+   },
+   "options_options_columns_in_a_row": {
+      "message": "in a row"
+   },
+   "options_options_custom_ratio": {
+      "message": "Custom thumbnail ratio"
+   },
+   "options_options_enable_recommender_description": {
+      "message": "Please note that this feature requires collection of anonymized data about the websites you visit"
+   },
+   "options_options_enable_recommender_label": {
+      "message": "Show recommended websites"
+   },
+   "options_options_enable_recommender_text": {
+      "message": "See websites recommended just for you"
+   },
+   "options_options_fit_logos": {
+      "description": "How to position image within element",
+      "message": "How to fit custom logos?"
+   },
+   "options_options_fit_logos_dont_resize": {
+      "message": "No resizing"
+   },
+   "options_options_fit_logos_fit": {
+      "description": "Fit to element",
+      "message": "Fit (default)"
+   },
+   "options_options_fit_logos_fit_and_center": {
+      "message": "Fit width and center"
+   },
+   "options_options_fit_logos_fit_width": {
+      "message": "Fit width"
+   },
+   "options_options_highlight_pages": {
+      "description": "Visually distinguish most visited sites",
+      "message": "Highlight most visited pages?"
+   },
+   "options_options_highlight_pages_help": {
+      "message": "Speed Dial 2 keeps track of your daily habits and remembers which pages do you visit in the morning, afternoon, evening and night. By turning this option on, you will see a red corner on 3 pages you visit most at current period of a day."
+   },
+   "options_options_modify_width": {
+      "message": "Modify width"
+   },
+   "options_options_modify_width_screen": {
+      "message": "of screen width"
+   },
+   "options_options_open_in_new_tab": {
+      "message": "Open links in new tab?"
+   },
+   "options_options_open_in_new_tab_help": {
+      "message": "Turn on to open links in new tab. If turned on, middle click or Ctrl+click will open links in current tab."
+   },
+   "options_options_order_dials": {
+      "description": "Sort bookmarks by...",
+      "message": "Order bookmarks by"
+   },
+   "options_options_order_dials_help": {
+      "message": "Bookmarks can be ordered automatically by number of visits or by your own manual order. If you choose to order bookmarks manually, you can drag them to change their position."
+   },
+   "options_options_order_groups": {
+      "description": "Sort groups by...",
+      "message": "Order groups by"
+   },
+   "options_options_order_manual": {
+      "description": "Sort manually",
+      "message": "Manual order"
+   },
+   "options_options_order_most_visited": {
+      "description": "Sort by number of visits",
+      "message": "By most visited"
+   },
+   "options_options_plus_button_button": {
+      "message": "button"
+   },
+   "options_options_plus_button_show": {
+      "description": "e.g. Display",
+      "message": "Show"
+   },
+   "options_options_refresh_thumbnail": {
+      "description": "Reload image?",
+      "message": "Refresh thumbnail image"
+   },
+   "options_options_refresh_thumbnail_disabled": {
+      "message": "Disabled (default)"
+   },
+   "options_options_remember_group": {
+      "description": "Remeber last visited group",
+      "message": "Remember active group"
+   },
+   "options_options_remember_group_help": {
+      "message": "Remember and open last used group on new launch."
+   },
+   "options_options_scroll_layout": {
+      "message": "Layout"
+   },
+   "options_options_scroll_layout_fit": {
+      "description": "Always fit bookmarks on a screen",
+      "message": "Fit bookmarks on screen"
+   },
+   "options_options_scroll_layout_scroll": {
+      "description": "Allow scrolling on a page",
+      "message": "Allow scrolling"
+   },
+   "options_options_show_in_context_menu": {
+      "message": "Show in context menu"
+   },
+   "options_options_show_options_button": {
+      "message": "Show Options button?"
+   },
+   "options_options_spacing": {
+      "description": "Visual spacing between elements",
+      "message": "Spacing"
+   },
+   "options_options_sync_and_backup": {
+      "message": "Sync and backup"
+   },
+   "options_options_sync_and_backup_protect": {
+      "message": "Protect your settings with"
+   },
+   "options_options_thumbnail_quality": {
+      "description": "Quality of thumbnail image",
+      "message": "Thumbnail quality"
+   },
+   "options_pagetitle": {
+      "message": "Speed Dial 2 - Options"
+   },
+   "options_requires_restart": {
+      "message": "requires browser restart"
+   },
+   "options_sidebar_show_apps": {
+      "message": "Show Applications?"
+   },
+   "options_sidebar_show_bookmarks": {
+      "message": "Show Bookmarks?"
+   },
+   "options_sidebar_show_history": {
+      "description": "Show the list of recently closed browser tabs",
+      "message": "Show Recently closed tabs?"
+   },
+   "options_sidebar_use_sidebar": {
+      "description": "Whether to show sidebar (toolbar)",
+      "message": "Use sidebar?"
+   },
+   "options_themes_bg_color": {
+      "message": "Background color"
+   },
+   "options_themes_bg_position": {
+      "message": "Background position"
+   },
+   "options_themes_bg_repeat": {
+      "message": "Background repeat"
+   },
+   "options_themes_bg_size": {
+      "message": "Background size"
+   },
+   "options_themes_bg_url": {
+      "message": "Background image URL"
+   },
+   "options_themes_file": {
+      "message": "Select image from your computer"
+   },
+   "options_themes_more_themes": {
+      "message": "More themes"
+   },
+   "options_themes_premium_themes": {
+      "message": "Premium themes"
+   },
+   "options_themes_premium_themes_text": {
+      "message": "Upgrade your account to unlock over 100 premium themes"
+   },
+   "options_themes_saved": {
+      "message": "Your background was successfully set. You may want to customize additional settings (e.g. size of the background or its position)."
+   },
+   "options_themes_settings": {
+      "message": "Customize background"
+   },
+   "options_themes_themes": {
+      "description": "Visual themes",
+      "message": "Themes"
+   },
+   "options_themes_url": {
+      "message": "Custom URL"
+   },
+   "or": {
+      "message": "OR"
+   },
+   "original_size": {
+      "description": "Keep opriginal size",
+      "message": "Original size"
+   },
+   "other_devices": {
+      "description": "Other devices (e.g. mobile phone, tablet)",
+      "message": "Other devices"
+   },
+   "overall": {
+      "message": "Overall"
+   },
+   "password": {
+      "message": "Password"
+   },
+   "pay": {
+      "message": "Pay"
+   },
+   "people_with_link_can": {
+      "message": "People with link can"
+   },
+   "permissions_view_and_edit_group": {
+      "message": "View group and add bookmarks"
+   },
+   "permissions_view_group": {
+      "message": "View group"
+   },
+   "position": {
+      "description": "Position of title (e.g. top, bottom, )",
+      "message": "Position"
+   },
+   "position_bottom": {
+      "message": "Bottom"
+   },
+   "position_center": {
+      "message": "Center"
+   },
+   "position_left": {
+      "message": "Left"
+   },
+   "position_right": {
+      "message": "Right"
+   },
+   "position_top": {
+      "message": "Top"
+   },
+   "previous_uploads": {
+      "message": "Recent uploads"
+   },
+   "privacy_policy": {
+      "message": "Privacy Policy"
+   },
+   "pro_sync_backups": {
+      "message": "Your backups"
+   },
+   "pro_sync_features_0": {
+      "message": "Never lose access to your bookmarks and keep your data safe"
+   },
+   "pro_sync_features_1": {
+      "description": "Please mind and keep html tags",
+      "message": "Synchronization and data backup"
+   },
+   "pro_sync_features_2": {
+      "description": "Please mind and keep html tags",
+      "message": "Online access to your bookmarks"
+   },
+   "pro_sync_features_3": {
+      "description": "Please mind and keep html tags",
+      "message": "Access to our mobile app"
+   },
+   "pro_sync_features_4": {
+      "message": "More customization options"
+   },
+   "pro_sync_features_5": {
+      "message": "E-mail support and more ..."
+   },
+   "pro_sync_how_it_works": {
+      "message": "How does it work?"
+   },
+   "pro_sync_how_it_works_1_text": {
+      "message": "With Speed Dial Pro, you bookmarks and settings are automatically synchronized to our server speeddial2.com. All your data are instantly available across all your computers and devices. "
+   },
+   "pro_sync_how_it_works_1_title": {
+      "message": "Seamless synchronization"
+   },
+   "pro_sync_how_it_works_2_text": {
+      "message": "Access your bookmarks online or from your mobile device by logging in at https://speeddial2.com. To quickly access your bookmarks from your mobile device, set Speed Dial 2 as a homepage or pin it as a bookmark on your home screen."
+   },
+   "pro_sync_how_it_works_2_title": {
+      "message": "Mobile and online access to your bookmarks"
+   },
+   "pro_sync_lifetime": {
+      "description": "e.g. $4.99 for a lifetime account",
+      "message": "for a lifetime premium account."
+   },
+   "pro_sync_see_your_bookmarks_online": {
+      "description": "Click to open web page with user's bookmarks",
+      "message": "See your bookmarks online"
+   },
+   "pro_sync_setup_option_1": {
+      "message": "Add bookmarks from this browser to my sync account"
+   },
+   "pro_sync_setup_option_2": {
+      "message": "Overwrite bookmarks in this browser"
+   },
+   "pro_sync_setup_text": {
+      "message": "It seems this is the first time you're connecting this computer to our sync. Would you like to keep your existing bookmarks and groups and merge them with your sync?"
+   },
+   "pro_sync_signed_in_ok": {
+      "description": "All your data is synchronized",
+      "message": "All your data in the cloud!"
+   },
+   "pro_sync_status": {
+      "message": "Status of your account"
+   },
+   "pro_sync_tagline": {
+      "description": "Can be changed to something like: Have your bookmarks always with you.",
+      "message": "If you like Speed Dial 2, you'll love to have it always with you!"
+   },
+   "pro_sync_upgrade": {
+      "message": "Upgrade to Speed Dial 2 Pro"
+   },
+   "pro_sync_upgrade_cta": {
+      "message": "Go Premium"
+   },
+   "pro_sync_upgrade_done_continue": {
+      "message": "Start initial synchronization"
+   },
+   "pro_sync_upgrade_done_text": {
+      "message": "All your settings and bookmarks will be synchronized and safely backed up! Please click the button below to allow your initial sync."
+   },
+   "pro_sync_upgrade_text": {
+      "message": "Awesome! You're just one step away from becoming a Pro. Please select your preferred payment method."
+   },
+   "pro_sync_upgrade_title": {
+      "description": "Select payment method",
+      "message": "How would you like to pay?"
+   },
+   "pro_sync_upgrade_your_account": {
+      "description": "Upgrade your account to premium",
+      "message": "Upgrade your account!"
+   },
+   "pro_sync_username": {
+      "message": "Username or e-mail"
+   },
+   "purchase": {
+      "message": "Purchase"
+   },
+   "read_more": {
+      "message": "Read more"
+   },
+   "recently_closed_tabs": {
+      "message": "Recently closed tabs"
+   },
+   "refresh": {
+      "description": "Refresh web page",
+      "message": "Refresh"
+   },
+   "reload": {
+      "message": "Reload"
+   },
+   "remove": {
+      "description": "e.g. Remove bookmark",
+      "message": "Remove"
+   },
+   "repeat": {
+      "description": "Repeat background image",
+      "message": "Repeat"
+   },
+   "reset_password": {
+      "message": "Reset password"
+   },
+   "reset_to_default": {
+      "message": "Reset to default"
+   },
+   "right": {
+      "description": "Alight to right",
+      "message": "Right"
+   },
+   "save": {
+      "message": "Save"
+   },
+   "save_page_to": {
+      "message": "Save page to"
+   },
+   "save_settings": {
+      "message": "Save settings"
+   },
+   "search": {
+      "message": "Search"
+   },
+   "select_background": {
+      "message": "Select background"
+   },
+   "select_file": {
+      "message": "Select a file"
+   },
+   "set_up_your_account": {
+      "description": "Set up your premium account",
+      "message": "Set up your account"
+   },
+   "share_to_web": {
+      "message": "Share to web"
+   },
+   "share_to_web_helper": {
+      "message": "Publish group and share link with anyone"
+   },
+   "show_all": {
+      "message": "Show all"
+   },
+   "show_help": {
+      "message": "Show help"
+   },
+   "show_on_this_device": {
+      "message": "Groups to show on this device"
+   },
+   "sidebar_clear_list": {
+      "description": "Clear the list of Recently closed tabs",
+      "message": "Clear the list"
+   },
+   "sign_in": {
+      "message": "Sign in"
+   },
+   "sign_out": {
+      "message": "Sign out"
+   },
+   "sign_out_confirm": {
+      "message": "Are you sure you want to sign out?"
+   },
+   "sign_out_done": {
+      "message": "You have been signed out."
+   },
+   "sign_up": {
+      "message": "Sign up"
+   },
+   "signed_in_as": {
+      "message": "You are signed in as"
+   },
+   "small": {
+      "message": "Small"
+   },
+   "spacing": {
+      "description": "Visual spacing between elements",
+      "message": "Spacing"
+   },
+   "statistics": {
+      "message": "Statistics"
+   },
+   "statistics_loading_message": {
+      "message": "Please wait while we analyze your browsing history."
+   },
+   "statistics_most_visited_history": {
+      "message": "Most visited pages (Browser history)"
+   },
+   "statistics_most_visited_sd2": {
+      "message": "Most visited pages (Speed Dial 2)"
+   },
+   "statistics_pagetitle": {
+      "message": "Speed dial 2 - Statistics"
+   },
+   "statistics_statistics": {
+      "message": "Statistics"
+   },
+   "sync_complete": {
+      "message": "Sync complete..."
+   },
+   "sync_connected": {
+      "message": "Connected with your account."
+   },
+   "sync_connecting": {
+      "message": "Connecting to sync server..."
+   },
+   "sync_enter_credentials": {
+      "message": "Enter username and password"
+   },
+   "sync_error_import": {
+      "message": "There was an error while importing your settings."
+   },
+   "sync_error_not_active": {
+      "message": "Your account is not active. Upgrade to Speed Dial Pro to activate it."
+   },
+   "sync_error_timeout": {
+      "message": "There was an error while connecting to server."
+   },
+   "sync_now": {
+      "message": "Sync now"
+   },
+   "sync_ok": {
+      "message": "Sync OK"
+   },
+   "sync_preparing": {
+      "message": "Preparing initial sync..."
+   },
+   "sync_wait": {
+      "message": "Please wait for synchronization to complete..."
+   },
+   "sync_wrong_credentials": {
+      "message": "Wrong e-mail or password"
+   },
+   "system": {
+      "message": "System"
+   },
+   "text": {
+      "message": "Text"
+   },
+   "thank_you": {
+      "message": "Thank you!"
+   },
+   "theme": {
+      "message": "Theme"
+   },
+   "title": {
+      "message": "Title"
+   },
+   "top": {
+      "message": "Top"
+   },
+   "transparent": {
+      "description": "Transparent background color",
+      "message": "Transparent"
+   },
+   "tweet_and_become_a_pro": {
+      "message": "Tweet about us and become a Pro!"
+   },
+   "tweet_and_win": {
+      "message": "Tweet and win our Pro account"
+   },
+   "tweet_giveaway_description": {
+      "message": "Each month, we give out Premium accounts for the best tweets about us!"
+   },
+   "undo": {
+      "message": "Undo"
+   },
+   "uninstall": {
+      "message": "Uninstall"
+   },
+   "update": {
+      "message": "Update"
+   },
+   "upgrade": {
+      "message": "Upgrade"
+   },
+   "url": {
+      "message": "Url"
+   },
+   "user_interface": {
+      "message": "User Interface"
+   },
+   "vertically": {
+      "description": "Repeat vertically",
+      "message": "Vertically"
+   },
+   "visits": {
+      "description": "e.g. Number of visits",
+      "message": "visits"
+   },
+   "warning": {
+      "message": "Warning"
+   },
+   "welcome_10_1": {
+      "message": "According to your browsing history, here is the list of recomended sites to start with. Select sites you would like to add to Speed Dial and click Continue."
+   },
+   "welcome_10_h1": {
+      "description": "Recommended sites for user",
+      "message": "Top picks for you"
+   },
+   "welcome_1_1": {
+      "message": "Over the past few years, we've been working hard to craft a perfect new tab page."
+   },
+   "welcome_1_2": {
+      "message": "We invite you to take a tour of extension's featureswhich will help you to get around easily. It will take just a moment!"
+   },
+   "welcome_1_h1": {
+      "message": "Welcome to Speed Dial 2!"
+   },
+   "welcome_2_1": {
+      "message": "Our extension is all about visual bookmarks of your favorite websites."
+   },
+   "welcome_2_2": {
+      "description": "Unlike default new tab page in Google Chrome...",
+      "message": "Unlike default new tab, Speed Dial 2 allows you to keep as many websites as you want and even organize them into groups!"
+   },
+   "welcome_2_h1": {
+      "message": "Bookmark - your favorite website"
+   },
+   "welcome_3_1": {
+      "message": "Creating new bookmark is always one click away"
+   },
+   "welcome_3_2": {
+      "message": "Click the (+) button when you're on new tab page or instantly save current page with a click on browser toolbar button."
+   },
+   "welcome_3_h1": {
+      "description": "How to create new bookmark",
+      "message": "Creating new bookmark"
+   },
+   "welcome_4_1": {
+      "message": "Right click (or Cmd + click) a bookmark to change its settings."
+   },
+   "welcome_4_h1": {
+      "description": "How to edit a bookmark",
+      "message": "Editing a bookmark"
+   },
+   "welcome_6_1": {
+      "description": "Please mind and keep tags",
+      "message": "Sidebar gives you quick access to recently closed tabs or your browser bookmarks. Move your mouse to the right edge of the screen to open sidebar."
+   },
+   "welcome_6_h1": {
+      "message": "The sidebar."
+   },
+   "welcome_7_1": {
+      "message": "Speed Dial 2 gives you valuable insights about how you spend your day - it shows you the websites you often visit at the morning, afternoon or night and allows you to learn more about your habits."
+   },
+   "welcome_7_h1": {
+      "message": "Learn more about your day"
+   },
+   "welcome_9_1": {
+      "description": "Please mind and keep tags",
+      "message": "Customize your new tab page with beautiful themes created by designers across the world."
+   },
+   "welcome_9_h1": {
+      "message": "Customize new tab with beautiful themes!"
+   },
+   "welcome_back": {
+      "message": "back"
+   },
+   "welcome_continue": {
+      "message": "Continue"
+   },
+   "welcome_finish": {
+      "description": "e.g. Finish setting up your account",
+      "message": "Finish"
+   },
+   "welcome_message": {
+      "description": "Never translate application name",
+      "message": "Welcome to Speed Dial 2 Pro!"
+   },
+   "welcome_pagetitle": {
+      "message": "Welcome to Speed Dial 2!"
+   },
+   "welcome_signup_h1": {
+      "message": "Create Speed Dial 2 account"
+   },
+   "welcome_skip_the_tour": {
+      "description": "Skip introduction section",
+      "message": "Skip the tour"
+   },
+   "white": {
+      "description": "White background color",
+      "message": "White"
+   },
+   "width": {
+      "message": "Width"
+   },
+   "year": {
+      "message": "year"
+   },
+   "your_email_address": {
+      "message": "Your e-mail address"
+   }
+}

@@ -1,0 +1,1222 @@
+{
+   "account": {
+      "message": "Cuenta de usuario"
+   },
+   "add": {
+      "message": "Añadir"
+   },
+   "afternoon": {
+      "message": "Tarde"
+   },
+   "agree_to_privacy_policy": {
+      "message": "He leído y acepto la \u003Ca href='https://www.speeddial2.com/privacy-policy' target='_blank'>Política de privacidad\u003C/a>."
+   },
+   "agree_to_privacy_policy_error": {
+      "message": "Debes aceptar la política de privacidad para continuar"
+   },
+   "already_have_an_account": {
+      "message": "¿Ya tienes una cuenta?"
+   },
+   "appDescription": {
+      "description": "Never translate application name",
+      "message": "Speed Dial 2 es una nueva pestaña simple, rápida e intuitiva que le permite guardar y organizar sus sitios web favoritos."
+   },
+   "appName": {
+      "description": "App name - never translate application name",
+      "message": "Speed ​​Dial 2 Nueva pestaña"
+   },
+   "appShortName": {
+      "description": "App name - never translate application name",
+      "message": "Speed ​​Dial 2"
+   },
+   "applications": {
+      "message": "Aplicaciones"
+   },
+   "apps_app_uninstalled": {
+      "message": "La aplicación se ha desinstalado con éxito"
+   },
+   "apps_do_you_want_to_uninstall": {
+      "message": "¿Realmente deseas desinstalar la aplicación?"
+   },
+   "auto": {
+      "message": "Auto"
+   },
+   "back": {
+      "message": "Atrás"
+   },
+   "back_to_bookmarks": {
+      "message": "Volver a mis marcadores"
+   },
+   "background": {
+      "message": "Fondo"
+   },
+   "background_color": {
+      "message": "Color de fondo"
+   },
+   "bookmark": {
+      "message": "Marcador"
+   },
+   "bookmarks": {
+      "message": "Marcadores"
+   },
+   "border": {
+      "message": "Borde"
+   },
+   "cancel": {
+      "message": "Cancelar"
+   },
+   "center": {
+      "description": "Alight to center",
+      "message": "Centro"
+   },
+   "choose_password": {
+      "message": "Elige una contraseña"
+   },
+   "click_here_to_start": {
+      "message": "Click here to start"
+   },
+   "click_to_confirm_background": {
+      "message": "Haz clic para confirmar el fondo"
+   },
+   "close": {
+      "message": "Cerrar"
+   },
+   "close_message": {
+      "description": "Close this message",
+      "message": "Cerrar mensaje"
+   },
+   "color": {
+      "message": "Color"
+   },
+   "coming_soon": {
+      "message": "Próximamente"
+   },
+   "compact_layout": {
+      "description": "A more compact layout option",
+      "message": "Diseño compacto"
+   },
+   "contain": {
+      "description": "Do not crop image",
+      "message": "Contener imagen"
+   },
+   "continue": {
+      "message": "Continuar"
+   },
+   "continue_without_account": {
+      "message": "Continuar sin cuenta"
+   },
+   "copied": {
+      "message": "Copiado"
+   },
+   "copy_link": {
+      "message": "Copiar vínculo"
+   },
+   "copy_url": {
+      "message": "Copiar URL"
+   },
+   "cover": {
+      "description": "Cover entire screen with image",
+      "message": "Llenar pantalla con imagen"
+   },
+   "custom_css_add": {
+      "message": "Add custom CSS"
+   },
+   "custom_css_enter": {
+      "message": "Enter your custom CSS without the &lt;style&gt; tag"
+   },
+   "custom_css_text": {
+      "message": "Please note that this option is for advanced users only, don't write anything here unless you know what you're doing :)"
+   },
+   "customize_background_color": {
+      "message": "Personalizar color de fondo"
+   },
+   "customize_dark_theme": {
+      "message": "Tema oscuro"
+   },
+   "customize_light_theme": {
+      "message": "Tema claro"
+   },
+   "dark": {
+      "description": "Dark background color",
+      "message": "Oscuro"
+   },
+   "default": {
+      "message": "por defecto"
+   },
+   "delete": {
+      "message": "Borrar"
+   },
+   "disabled": {
+      "message": "Inhabilitado"
+   },
+   "dont_repeat": {
+      "description": "Do not repeat background image",
+      "message": "No repetir"
+   },
+   "edit": {
+      "message": "Editar"
+   },
+   "email": {
+      "message": "Correo electrónico"
+   },
+   "enter_password": {
+      "message": "Introduce la contraseña"
+   },
+   "enter_your_email": {
+      "message": "Introduce tu dirección de correo electrónico"
+   },
+   "error_enter_email": {
+      "message": "Introduce tu dirección de correo electrónico."
+   },
+   "error_enter_password": {
+      "message": "Por favor, introduce tu contraseña."
+   },
+   "error_file_too_large": {
+      "message": "Lo sentimos, el archivo es demasiado grande."
+   },
+   "error_invalid_email": {
+      "message": "Por favor, introduce una dirección de correo electrónico válida."
+   },
+   "error_payment": {
+      "message": "Se ha producido un error al procesar el pago. No se ha realizado ningún pago."
+   },
+   "evening": {
+      "message": "Tarde-noche"
+   },
+   "font_bold": {
+      "message": "Bold"
+   },
+   "font_bold_italic": {
+      "message": "Bold Italic"
+   },
+   "font_italic": {
+      "message": "Italic"
+   },
+   "font_normal": {
+      "message": "Normal"
+   },
+   "forgot_password": {
+      "message": "¿Olvidaste tu contraseña?"
+   },
+   "general": {
+      "message": "Configuración general"
+   },
+   "group": {
+      "message": "Grupo"
+   },
+   "groups": {
+      "message": "Grupos"
+   },
+   "help": {
+      "message": "Ayuda"
+   },
+   "high": {
+      "description": "High quality",
+      "message": "Alta"
+   },
+   "home": {
+      "message": "Home"
+   },
+   "horizontally": {
+      "description": "Repeat horizontally",
+      "message": "Horizontalmente"
+   },
+   "i_understand": {
+      "description": "I understan and I wish to proceed",
+      "message": "Entiendo"
+   },
+   "image_hosting_providers": {
+      "message": "Tip: You can use image hosting providers (e.g. imgur.com) to upload a background image."
+   },
+   "inside": {
+      "message": "Dentro"
+   },
+   "large": {
+      "message": "Grande"
+   },
+   "last_synchronization": {
+      "message": "last synchronization"
+   },
+   "learn_about_chrome_apps": {
+      "message": "Learn more about Chrome Apps"
+   },
+   "learn_more": {
+      "message": "Obtener más información"
+   },
+   "left": {
+      "description": "Alight to left",
+      "message": "Izquierda"
+   },
+   "light": {
+      "message": "Claro"
+   },
+   "low": {
+      "description": "Low quality",
+      "message": "Baja"
+   },
+   "medium": {
+      "description": "Medium quality",
+      "message": "Media"
+   },
+   "mobile_app": {
+      "message": "Aplicación móvil"
+   },
+   "mobile_app_description": {
+      "message": "Accede y guarda marcadores fácilmente mientras estás en movimiento."
+   },
+   "morning": {
+      "message": "Mañana"
+   },
+   "move_to": {
+      "message": "Mover a"
+   },
+   "name": {
+      "message": "Nombre"
+   },
+   "new": {
+      "description": "New feature badge",
+      "message": "Nuevo"
+   },
+   "new_tab": {
+      "description": "This is New tab page of Google Chrome",
+      "message": "Nueva pestaña"
+   },
+   "newest_first": {
+      "message": "El más reciente primero"
+   },
+   "newtab_add_dial_error": {
+      "message": "Por favor, rellena todos los campos obligatorios."
+   },
+   "newtab_add_new_dial": {
+      "message": "Añadir nuevo marcador"
+   },
+   "newtab_app_launch": {
+      "message": "Ejecutar aplicación"
+   },
+   "newtab_click_to_learn_more": {
+      "message": "Haz clic aquí para obtener más información"
+   },
+   "newtab_create_group": {
+      "description": "Create new group (a list of bookmarks)",
+      "message": "Crear grupo nuevo"
+   },
+   "newtab_customize_thumbnail": {
+      "description": "Customize thumbnail image",
+      "message": "Personalizar miniatura"
+   },
+   "newtab_customize_thumbnail_text": {
+      "message": "La captura de la miniatura se realizará cuando abra la página por primera vez. También puedes elegir logos de las páginas web más populares, subir imágenes desde tu ordenador o introducir la URL de una imagen."
+   },
+   "newtab_dial_remove_warning": {
+      "message": "¿Realmente deseas eliminar este marcador?"
+   },
+   "newtab_dial_saved": {
+      "message": "Marcador guardado"
+   },
+   "newtab_edit_dial": {
+      "message": "Editar marcador"
+   },
+   "newtab_edit_group": {
+      "message": "Editar grupo"
+   },
+   "newtab_enter_group_name": {
+      "description": "Error: Please enter a name of new group",
+      "message": "Por favor introduce un nombre"
+   },
+   "newtab_enter_name": {
+      "message": "Introduce el nombre"
+   },
+   "newtab_feature_locked": {
+      "description": "Available only to premium users",
+      "message": "Esta característica sólo está disponible para los usuarios Pro."
+   },
+   "newtab_group_edited": {
+      "description": "Settings of a group (a list of bookmarks) has been saved",
+      "message": "El grupo se ha actualizado."
+   },
+   "newtab_group_remove_warning": {
+      "description": "Mind and keep tag",
+      "message": "Esto eliminará el grupo seleccionado con todos los marcadores que contiene. ¿Deseas continuar?"
+   },
+   "newtab_group_removed": {
+      "description": "Group (a list of bookmarks) has been removed",
+      "message": "El grupo se ha eliminado."
+   },
+   "newtab_homegroup": {
+      "message": "Este es tu grupo principal"
+   },
+   "newtab_open_all_links": {
+      "description": "Open all bookmarks within group",
+      "message": "Abrir todos los marcadores"
+   },
+   "newtab_open_in_new_tab": {
+      "description": "Open bookmark in new tab in a browser",
+      "message": "Abrir en una nueva pestaña"
+   },
+   "newtab_reload_thumbnail": {
+      "description": "Reload thumbnail image",
+      "message": "Volver a cargar miniatura"
+   },
+   "newtab_remove_group": {
+      "message": "Eliminar grupo"
+   },
+   "newtab_remove_question": {
+      "message": "Eliminar marcador"
+   },
+   "newtab_search_your_bookmarks": {
+      "description": "Search within your bookmarks",
+      "message": "Buscar marcadores"
+   },
+   "newtab_search_your_history": {
+      "description": "Search within your history",
+      "message": "Buscar historial"
+   },
+   "newtab_select_from_most_popular": {
+      "description": "Select site from the list of most popular websites",
+      "message": "Selecciona una de las páginas web más populares"
+   },
+   "newtab_thumbnail_file": {
+      "message": "Elegir archivo"
+   },
+   "newtab_thumbnail_image_url": {
+      "message": "Introduce la URL de la imagen"
+   },
+   "newtab_thumbnail_popular": {
+      "message": "Páginas web más populares"
+   },
+   "newtab_type_url": {
+      "message": "Escribe o pega una URL"
+   },
+   "newtab_update_group": {
+      "message": "Actualizar grupo"
+   },
+   "night": {
+      "message": "Noche"
+   },
+   "none": {
+      "message": "Desactivar"
+   },
+   "oldest_first": {
+      "message": "Primero el más antiguo"
+   },
+   "options": {
+      "message": "Opciones"
+   },
+   "options_apps_show_panel": {
+      "description": "Show panel (toolbar) with applications",
+      "message": "¿Mostrar barra de herramientas con las aplicaciones instaladas?"
+   },
+   "options_apps_show_panel_help": {
+      "message": " "
+   },
+   "options_background_leave_empty": {
+      "message": "No establecer imagen de fondo"
+   },
+   "options_customize_background_color": {
+      "message": "Color de fondo"
+   },
+   "options_customize_border_colors": {
+      "message": "Color de borde"
+   },
+   "options_customize_customize_colors": {
+      "message": "Personalizar colores"
+   },
+   "options_customize_font_face": {
+      "message": "Tipo de fuente"
+   },
+   "options_customize_font_size": {
+      "message": "Tamaño de fuente"
+   },
+   "options_customize_font_style": {
+      "message": "Estilo de fuente"
+   },
+   "options_customize_inner_background_color": {
+      "message": "Color interior de fondo"
+   },
+   "options_customize_no_shadow": {
+      "message": "Sin sombra"
+   },
+   "options_customize_padding": {
+      "message": "Relleno"
+   },
+   "options_customize_preview": {
+      "message": "Mostrar previsualización"
+   },
+   "options_customize_rounded_corners": {
+      "message": "Esquinas redondeadas"
+   },
+   "options_customize_shadow": {
+      "description": "Visual shadow under element",
+      "message": "Sombra"
+   },
+   "options_customize_show_title": {
+      "message": "¿Mostrar título de marcadores?"
+   },
+   "options_customize_show_visits": {
+      "message": "¿Mostrar número de visitas?"
+   },
+   "options_customize_text_align": {
+      "message": "Alineación de texto"
+   },
+   "options_customize_title": {
+      "message": "Título"
+   },
+   "options_customize_title_color": {
+      "description": "Color of title",
+      "message": "Color del título"
+   },
+   "options_dialog_center_vertically": {
+      "message": "Centrar verticalmente"
+   },
+   "options_dialog_columns": {
+      "message": "columnas"
+   },
+   "options_dialog_more_options": {
+      "message": "Más opciones ..."
+   },
+   "options_dialog_open_help": {
+      "message": "Abrir ayuda"
+   },
+   "options_dialog_open_stats": {
+      "message": "Abrir estadísticas"
+   },
+   "options_dialog_protect_your_data": {
+      "message": "Protege tus datos con la sincronización y copia de seguridad"
+   },
+   "options_dialog_set_columns": {
+      "description": "Number of columns in a row",
+      "message": "Número de columnas"
+   },
+   "options_dialog_stats_and_help": {
+      "message": "Estadísticas y ayuda"
+   },
+   "options_dialog_sync_last": {
+      "description": "Last synchronization time",
+      "message": "Última sincronización"
+   },
+   "options_dialog_sync_ok": {
+      "description": "Ensures user's data is safe",
+      "message": "¡Tus datos se han sincronizado y se ha realizado una copia de seguridad!"
+   },
+   "options_dialog_themes": {
+      "description": "Visual themes",
+      "message": "Temas"
+   },
+   "options_dialog_title": {
+      "message": "Ajustes"
+   },
+   "options_export_download": {
+      "message": "Descargar como archivo"
+   },
+   "options_export_result": {
+      "message": "Estos son los ajustes exportados - copia y pega con el botón \"Importar ajustes\" para importar la configuración en otro equipo diferente."
+   },
+   "options_export_text": {
+      "message": " "
+   },
+   "options_export_title": {
+      "description": "Export user's settings",
+      "message": "Exportar configuración"
+   },
+   "options_import_result": {
+      "message": "Pega ajustes que has exportado previamente con la opción \"Exportar configuración\"."
+   },
+   "options_import_text": {
+      "message": " "
+   },
+   "options_import_title": {
+      "message": "Importar configuración"
+   },
+   "options_import_warning_text_1": {
+      "message": "Esto reemplazará todos tus marcadores y grupos por los nuevos ajustes."
+   },
+   "options_import_warning_text_2": {
+      "message": "Además de los cambios en tu ordenador, si importas los ajustes cuando hayas iniciado sesión se reemplazarán también los marcadores y grupos en nuestro servidor de sincronización."
+   },
+   "options_nav_apps": {
+      "message": "Aplicaciones"
+   },
+   "options_nav_background": {
+      "description": "Visual themes",
+      "message": "Temas"
+   },
+   "options_nav_backup": {
+      "message": "Importar / exportar"
+   },
+   "options_nav_changelog": {
+      "message": "Historial de cambios"
+   },
+   "options_nav_customize": {
+      "message": "Personaliza la apariencia"
+   },
+   "options_nav_options": {
+      "message": "Opciones"
+   },
+   "options_nav_sidebar": {
+      "description": "Toolbar at the side of the screen",
+      "message": "Barra lateral"
+   },
+   "options_nav_sync": {
+      "description": "Synchronization and backup",
+      "message": "Sincronización y copia de seguridad"
+   },
+   "options_nav_widgets": {
+      "message": "Complementos"
+   },
+   "options_options": {
+      "message": "Opciones"
+   },
+   "options_options_advanced_options": {
+      "message": "Opciones avanzadas"
+   },
+   "options_options_center_vertically": {
+      "description": "visually center",
+      "message": "¿Centrar filas verticalmente?"
+   },
+   "options_options_columns": {
+      "description": "Number of columns in a row",
+      "message": "Número de columnas"
+   },
+   "options_options_columns_help": {
+      "message": " "
+   },
+   "options_options_columns_in_a_row": {
+      "message": "en una fila"
+   },
+   "options_options_custom_ratio": {
+      "message": "Personalizar aspecto de la miniatura"
+   },
+   "options_options_enable_recommender_description": {
+      "message": "Tenga en cuenta que esta función requiere la recopilación de datos anónimos sobre los sitios web que visita"
+   },
+   "options_options_enable_recommender_label": {
+      "message": "Mostrar sitios web recomendados"
+   },
+   "options_options_enable_recommender_text": {
+      "message": ""
+   },
+   "options_options_fit_logos": {
+      "description": "How to position image within element",
+      "message": "¿Como establecer logos personalizados?"
+   },
+   "options_options_fit_logos_dont_resize": {
+      "message": "No cambiar tamaño"
+   },
+   "options_options_fit_logos_fit": {
+      "description": "Fit to element",
+      "message": "Ajustar (por defecto)"
+   },
+   "options_options_fit_logos_fit_and_center": {
+      "message": "Ajustar ancho y centrar"
+   },
+   "options_options_fit_logos_fit_width": {
+      "message": "Ajustar ancho"
+   },
+   "options_options_highlight_pages": {
+      "description": "Visually distinguish most visited sites",
+      "message": "¿Resaltar páginas más visitadas?"
+   },
+   "options_options_highlight_pages_help": {
+      "message": " "
+   },
+   "options_options_modify_width": {
+      "message": "Modificar ancho"
+   },
+   "options_options_modify_width_screen": {
+      "message": "del ancho de la pantalla"
+   },
+   "options_options_open_in_new_tab": {
+      "message": "¿Abrir enlace en una nueva pestaña?"
+   },
+   "options_options_open_in_new_tab_help": {
+      "message": "Activar para abrir enlaces en una nueva pestaña. Si está activado, haz click en el botón central o Ctrl+clic para abrir enlaces en la pestaña actual."
+   },
+   "options_options_order_dials": {
+      "description": "Sort bookmarks by...",
+      "message": "Ordenar marcadores por"
+   },
+   "options_options_order_dials_help": {
+      "message": " "
+   },
+   "options_options_order_manual": {
+      "description": "Sort manually",
+      "message": "Manualmente"
+   },
+   "options_options_order_most_visited": {
+      "description": "Sort by number of visits",
+      "message": "Número de visitas"
+   },
+   "options_options_plus_button_button": {
+      "message": "botón"
+   },
+   "options_options_plus_button_show": {
+      "description": "e.g. Display",
+      "message": "Mostrar"
+   },
+   "options_options_refresh_thumbnail": {
+      "description": "Reload image?",
+      "message": "Actualizar miniuatura"
+   },
+   "options_options_refresh_thumbnail_disabled": {
+      "message": "Desactivado (por defecto)"
+   },
+   "options_options_remember_group": {
+      "description": "Remeber last visited group",
+      "message": "Recordar último grupo visitado"
+   },
+   "options_options_remember_group_help": {
+      "message": "Opción de recordar y abrir el último grupo usado al volver a abrir"
+   },
+   "options_options_scroll_layout": {
+      "message": "Diseño"
+   },
+   "options_options_scroll_layout_fit": {
+      "description": "Always fit bookmarks on a screen",
+      "message": "Ajustar marcadores a la pantalla"
+   },
+   "options_options_scroll_layout_scroll": {
+      "description": "Allow scrolling on a page",
+      "message": "Permitir desplazamiento"
+   },
+   "options_options_show_in_context_menu": {
+      "message": "Mostrar Speed ​​Dial 2 en el menú contextual"
+   },
+   "options_options_show_options_button": {
+      "message": "¿Mostrar el botón Opciones?"
+   },
+   "options_options_spacing": {
+      "description": "Visual spacing between elements",
+      "message": "Espacio entre marcadores"
+   },
+   "options_options_sync_and_backup": {
+      "message": "Sincronización y copia de seguridad"
+   },
+   "options_options_sync_and_backup_protect": {
+      "message": "Protege tus ajustes con"
+   },
+   "options_options_thumbnail_quality": {
+      "description": "Quality of thumbnail image",
+      "message": "Calidad de la miniatura"
+   },
+   "options_pagetitle": {
+      "message": "Speed ​​Dial 2 - Opciones"
+   },
+   "options_requires_restart": {
+      "message": "es necesario reiniciar el navegador"
+   },
+   "options_sidebar_show_apps": {
+      "message": "¿Mostrar aplicaciones?"
+   },
+   "options_sidebar_show_bookmarks": {
+      "message": "¿Mostrar marcadores?"
+   },
+   "options_sidebar_show_history": {
+      "description": "Show the list of recently closed browser tabs",
+      "message": "¿Mostrar pestañas cerradas recientemente?"
+   },
+   "options_sidebar_use_sidebar": {
+      "description": "Whether to show sidebar (toolbar)",
+      "message": "¿Utilizar barra lateral?"
+   },
+   "options_themes_bg_color": {
+      "message": "Color de fondo"
+   },
+   "options_themes_bg_position": {
+      "message": "Posición de fondo"
+   },
+   "options_themes_bg_repeat": {
+      "message": "Repetición de fondo"
+   },
+   "options_themes_bg_size": {
+      "message": "Tamaño del fondo"
+   },
+   "options_themes_bg_url": {
+      "message": "Imagen del URL del fondo"
+   },
+   "options_themes_file": {
+      "message": "Selecciona una imagen de tu ordenador"
+   },
+   "options_themes_more_themes": {
+      "message": "Más temas"
+   },
+   "options_themes_premium_themes": {
+      "message": "Pro Temas"
+   },
+   "options_themes_premium_themes_text": {
+      "message": "Esta característica sólo está disponible para los usuarios Pro"
+   },
+   "options_themes_saved": {
+      "message": "El fondo se ha establecido con éxito. Es posible que desees personalizar otros ajustes (por el ejemplo, el tamaño del fondo o su posición)."
+   },
+   "options_themes_settings": {
+      "message": "Personalizar fondo"
+   },
+   "options_themes_themes": {
+      "description": "Visual themes",
+      "message": "Temas"
+   },
+   "options_themes_url": {
+      "message": "URL personalizada"
+   },
+   "or": {
+      "message": "O"
+   },
+   "original_size": {
+      "description": "Keep opriginal size",
+      "message": "Tamaño original"
+   },
+   "other_devices": {
+      "description": "Other devices (e.g. mobile phone, tablet)",
+      "message": "Otros dispositivos"
+   },
+   "overall": {
+      "message": "Total"
+   },
+   "password": {
+      "message": "Contraseña"
+   },
+   "pay": {
+      "message": "Pagar"
+   },
+   "people_with_link_can": {
+      "message": "Las personas con enlace pueden"
+   },
+   "permissions_view_and_edit_group": {
+      "message": "Mostrar y crear marcadores"
+   },
+   "permissions_view_group": {
+      "message": "Mostrar marcadores"
+   },
+   "position": {
+      "description": "Position of title (e.g. top, bottom, )",
+      "message": "Posición"
+   },
+   "position_bottom": {
+      "message": "Bottom"
+   },
+   "position_center": {
+      "message": "Center"
+   },
+   "position_left": {
+      "message": "Left"
+   },
+   "position_right": {
+      "message": "Right"
+   },
+   "position_top": {
+      "message": "Top"
+   },
+   "previous_uploads": {
+      "message": "Cargas recientes"
+   },
+   "privacy_policy": {
+      "message": "Política de privacidad"
+   },
+   "pro_sync_backups": {
+      "message": "Copias de seguridad de tus datos"
+   },
+   "pro_sync_features_0": {
+      "message": "Nunca pierdas el acceso a tus marcadores y mantenlos seguros."
+   },
+   "pro_sync_features_1": {
+      "description": "Please mind and keep html tags",
+      "message": "¡Sincronización y copia de seguridad!"
+   },
+   "pro_sync_features_2": {
+      "description": "Please mind and keep html tags",
+      "message": "Acceso a tus marcadores online."
+   },
+   "pro_sync_features_3": {
+      "description": "Please mind and keep html tags",
+      "message": "Acceso desde cualquier dispositivo móvil."
+   },
+   "pro_sync_features_4": {
+      "message": "Más opciones de personalización."
+   },
+   "pro_sync_features_5": {
+      "message": "Corre electrónico de ayuda y más ..."
+   },
+   "pro_sync_how_it_works": {
+      "message": "¿Cómo funciona?"
+   },
+   "pro_sync_how_it_works_1_text": {
+      "message": "Con Speed Dial Pro, los marcadores y los ajustes se sincronizan automáticamente en nuestro servidor speeddial2.com. Tus datos estarán disponibles al instante en todos tus equipos y dispositivos."
+   },
+   "pro_sync_how_it_works_1_title": {
+      "message": "Sincronización perfecta"
+   },
+   "pro_sync_how_it_works_2_text": {
+      "message": "Accede a tus marcadores desde Internet o desde tu dispositivo móvil conectándote a https://speeddial2.com. Para acceder rápidamente a tus marcadores desde tu dispositivo móvil, establece Speed Dial 2 como tu página de inicio o como marcador en la pantalla de inicio."
+   },
+   "pro_sync_how_it_works_2_title": {
+      "message": "Acceso a marcadores mediante móvil y online"
+   },
+   "pro_sync_lifetime": {
+      "description": "e.g. $4.99 for a lifetime account",
+      "message": "para obtener una cuenta premium de por vida."
+   },
+   "pro_sync_see_your_bookmarks_online": {
+      "description": "Click to open web page with user's bookmarks",
+      "message": "Ver marcadores online"
+   },
+   "pro_sync_setup_option_1": {
+      "message": " Incorporar marcadores y grupos a la sincronización"
+   },
+   "pro_sync_setup_option_2": {
+      "message": "Sobrescribir mis ajustes locales con los marcadores desde la cuenta de sincronización"
+   },
+   "pro_sync_setup_text": {
+      "message": "Parece que es la primera vez que conectas este equipo a nuestra sincronización. ¿Quieres mantener tus marcadores y grupos existentes e incorporarlos a la sincronización?"
+   },
+   "pro_sync_signed_in_ok": {
+      "description": "All your data is synchronized",
+      "message": "¡Todos tus datos en la nube!"
+   },
+   "pro_sync_status": {
+      "message": "Estado de tu cuenta"
+   },
+   "pro_sync_tagline": {
+      "description": "Can be changed to something like: Have your bookmarks always with you.",
+      "message": "Si te gusta Speed ​​Dial 2, lo querrás llevar siempre contigo!"
+   },
+   "pro_sync_upgrade": {
+      "message": "Actualizar a Speed ​​Dial 2 Pro"
+   },
+   "pro_sync_upgrade_cta": {
+      "message": "Actualizar a Speed ​​Dial 2 Pro"
+   },
+   "pro_sync_upgrade_done_continue": {
+      "message": "Iniciar sincronización"
+   },
+   "pro_sync_upgrade_done_text": {
+      "message": "Todos los ajustes y los marcadores se sincronizarán y se realizará una copia de seguridad! Por favor, haz clic en el botón siguiente para iniciar la sincronización."
+   },
+   "pro_sync_upgrade_text": {
+      "message": "¡Excelente! Estás a un paso de convertirte en Pro. Por favor selecciona tu forma de pago preferida."
+   },
+   "pro_sync_upgrade_title": {
+      "description": "Select payment method",
+      "message": "¿Cómo te gustaría pagar?"
+   },
+   "pro_sync_upgrade_your_account": {
+      "description": "Upgrade your account to premium",
+      "message": "¡Actualiza tu cuenta!"
+   },
+   "pro_sync_username": {
+      "message": "Nombre de usuario o correo electrónico"
+   },
+   "purchase": {
+      "message": "Compra"
+   },
+   "read_more": {
+      "message": "Leer más"
+   },
+   "recently_closed_tabs": {
+      "message": "Pestañas cerradas recientemente"
+   },
+   "refresh": {
+      "description": "Refresh web page",
+      "message": "Refrescar"
+   },
+   "reload": {
+      "message": "Recargar"
+   },
+   "remove": {
+      "description": "e.g. Remove bookmark",
+      "message": "Eliminar"
+   },
+   "repeat": {
+      "description": "Repeat background image",
+      "message": "Repetir"
+   },
+   "reset_password": {
+      "message": "Restablecer contraseña"
+   },
+   "reset_to_default": {
+      "message": "Restablecer valores predeterminados"
+   },
+   "right": {
+      "description": "Alight to right",
+      "message": "Derecha"
+   },
+   "save": {
+      "message": "Guardar"
+   },
+   "save_page_to": {
+      "message": "Guardar página en"
+   },
+   "save_settings": {
+      "message": "Guardar ajustes"
+   },
+   "search": {
+      "message": "Búsqueda"
+   },
+   "select_background": {
+      "message": "¿Ya tienes una cuenta?"
+   },
+   "select_file": {
+      "message": "Elegir archivo"
+   },
+   "set_up_your_account": {
+      "description": "Set up your premium account",
+      "message": "Configura tu cuenta"
+   },
+   "share_to_web": {
+      "message": "Compartir en la web"
+   },
+   "share_to_web_helper": {
+      "message": "Publicar grupo y compartir enlace con cualquiera"
+   },
+   "show_all": {
+      "message": "Mostrar todo"
+   },
+   "show_help": {
+      "message": "Mostrar ayuda"
+   },
+   "show_on_this_device": {
+      "message": "Grupos para mostrar en este dispositivo."
+   },
+   "sidebar_clear_list": {
+      "description": "Clear the list of Recently closed tabs",
+      "message": "Borrar la lista"
+   },
+   "sign_in": {
+      "message": "Iniciar sesión"
+   },
+   "sign_out": {
+      "message": "Finalizar sesión"
+   },
+   "sign_out_confirm": {
+      "message": "¿Seguro que deseas salir?"
+   },
+   "sign_out_done": {
+      "message": "Has finalizado la sesión."
+   },
+   "sign_up": {
+      "message": "Registrarse"
+   },
+   "signed_in_as": {
+      "message": "Has iniciado sesión como"
+   },
+   "small": {
+      "message": "Pequeño"
+   },
+   "spacing": {
+      "description": "Visual spacing between elements",
+      "message": "Espacio"
+   },
+   "statistics": {
+      "message": "Estadísticas"
+   },
+   "statistics_loading_message": {
+      "message": "Por favor, espera mientras analizamos el historial de navegación."
+   },
+   "statistics_most_visited_history": {
+      "message": "Páginas más visitadas (historial del navegador)"
+   },
+   "statistics_most_visited_sd2": {
+      "message": "Páginas más visitadas (Speed ​​Dial 2)"
+   },
+   "statistics_pagetitle": {
+      "message": "Speed Dial 2 - Estadísticas"
+   },
+   "statistics_statistics": {
+      "message": "Estadísticas"
+   },
+   "sync_complete": {
+      "message": "Sincronización completada ..."
+   },
+   "sync_connected": {
+      "message": "Conectado con tu cuenta."
+   },
+   "sync_connecting": {
+      "message": "Conectando con el servidor de sincronización ..."
+   },
+   "sync_enter_credentials": {
+      "message": "Introduce tu nombre de usuario y contraseña"
+   },
+   "sync_error_import": {
+      "message": "Se ha producido un error al importar la configuración."
+   },
+   "sync_error_not_active": {
+      "message": "Tu cuenta no está activa. Actualiza tu cuenta a Speed Dial Pro para activarla."
+   },
+   "sync_error_timeout": {
+      "message": "Se ha producido un error al conectar con el servidor."
+   },
+   "sync_now": {
+      "message": "Sincronizar ahora"
+   },
+   "sync_ok": {
+      "message": "Sync OK"
+   },
+   "sync_preparing": {
+      "message": "Preparando sincronización ..."
+   },
+   "sync_wait": {
+      "message": "Espera a que finalice la sincronización ..."
+   },
+   "sync_wrong_credentials": {
+      "message": "Correo electrónico o contraseña erróneos"
+   },
+   "system": {
+      "message": "Sistema"
+   },
+   "text": {
+      "message": "Texto"
+   },
+   "thank_you": {
+      "message": "¡Gracias!"
+   },
+   "theme": {
+      "message": "Tema"
+   },
+   "title": {
+      "message": "Título"
+   },
+   "top": {
+      "message": "Superior"
+   },
+   "transparent": {
+      "description": "Transparent background color",
+      "message": "Transparente"
+   },
+   "tweet_and_become_a_pro": {
+      "message": "Tweet about us and become a Pro!"
+   },
+   "tweet_and_win": {
+      "message": "Tweet and win our Pro account"
+   },
+   "tweet_giveaway_description": {
+      "message": "Each month, we give out Premium accounts for the best tweets about us!"
+   },
+   "undo": {
+      "message": "Deshacer"
+   },
+   "uninstall": {
+      "message": "Desinstalar"
+   },
+   "update": {
+      "message": "Actualizar"
+   },
+   "upgrade": {
+      "message": "Actualizar"
+   },
+   "url": {
+      "message": "Url"
+   },
+   "user_interface": {
+      "message": "Interfaz de usuario"
+   },
+   "vertically": {
+      "description": "Repeat vertically",
+      "message": "Verticalmente"
+   },
+   "visits": {
+      "description": "e.g. Number of visits",
+      "message": "visitas"
+   },
+   "warning": {
+      "message": "Advertencia"
+   },
+   "welcome_10_1": {
+      "message": "De acuerdo con el historial de navegación, aquí está la lista de las páginas recomendadas. Selecciona las páginas que te gustaría añadir a Speed Dial y pulsa Finalizar."
+   },
+   "welcome_10_h1": {
+      "description": "Recommended sites for user",
+      "message": "Recomendaciones"
+   },
+   "welcome_1_1": {
+      "message": "Durante los últimos seis años hemos trabajo duro duro para diseñar una nueva página de inicio perfecta para satisfacer las necesidades de nuestros usuarios y mantener la sencillez."
+   },
+   "welcome_1_2": {
+      "message": "Te invitamos a que eches un vistazo a las características de la extensión, que te ayudará a familiarizarte con ellas. !Sólo te llevará un instante!"
+   },
+   "welcome_1_h1": {
+      "message": "¡Bienvenido a Speed ​​Dial 2!"
+   },
+   "welcome_2_1": {
+      "message": "Nuestra extensión te ofrece marcadores visuales de tus páginas web favoritas."
+   },
+   "welcome_2_2": {
+      "description": "Unlike default new tab page in Google Chrome...",
+      "message": "A diferencia de otras páginas de inicio, Speed ​​Dial 2 te permite tener e incluso organizar en grupos todas las páginas web que desees!"
+   },
+   "welcome_2_h1": {
+      "message": "Marcador - tu página web favorita"
+   },
+   "welcome_3_1": {
+      "message": "Crear un nuevo marcador está a un clic de distancia."
+   },
+   "welcome_3_2": {
+      "message": "Haz clic en el botón (+) para abrir una nueva pestaña o guarda instantáneamente la página actual en la barra de herramientas del navegador."
+   },
+   "welcome_3_h1": {
+      "description": "How to create new bookmark",
+      "message": "Crear nuevo marcador"
+   },
+   "welcome_4_1": {
+      "message": "Haz clic derecho (o cmd + clic) en un marcador para cambiar la configuración."
+   },
+   "welcome_4_h1": {
+      "description": "How to edit a bookmark",
+      "message": "Editar marcador"
+   },
+   "welcome_6_1": {
+      "description": "Please mind and keep tags",
+      "message": "La barra lateral es una característica especial de nuestra extensión, que te proporcionará acceso a las pestañas cerradas recientemente, lista de aplicaciones instaladas o marcadores de Google Chrome. Puedes activar y desactivar las características de la barra lateral en las opciones del menú. Mueve el ratón a la esquina superior derecha de la pantalla para abrir la barra lateral."
+   },
+   "welcome_6_h1": {
+      "message": "Barra lateral"
+   },
+   "welcome_7_1": {
+      "message": "Speed ​​Dial 2 te proporcionará información útil sobre tu día a día en Internet. Te mostrará las páginas web que visitas más a menudo por la mañana, tarde o noche y te permitirá saber más sobre tus hábitos."
+   },
+   "welcome_7_h1": {
+      "message": "Obtén más información sobre tu día a día en Internet."
+   },
+   "welcome_9_1": {
+      "description": "Please mind and keep tags",
+      "message": "Personaliza la nueva página de inicio con bellos temas creados por diseñadores de todo el mundo."
+   },
+   "welcome_9_h1": {
+      "message": "¡Personaliza la página de inicio con preciosos temas!"
+   },
+   "welcome_back": {
+      "message": "atrás"
+   },
+   "welcome_continue": {
+      "message": "Continuar"
+   },
+   "welcome_finish": {
+      "description": "e.g. Finish setting up your account",
+      "message": "Finalizar"
+   },
+   "welcome_message": {
+      "description": "Never translate application name",
+      "message": "¡Bienvenido a Speed ​​Dial 2 Pro!"
+   },
+   "welcome_pagetitle": {
+      "message": "¡Bienvenido a Speed Dial 2!"
+   },
+   "welcome_signup_h1": {
+      "message": "Crear cuenta Speed Dial 2"
+   },
+   "welcome_skip_the_tour": {
+      "description": "Skip introduction section",
+      "message": "Saltar introducción"
+   },
+   "white": {
+      "description": "White background color",
+      "message": "Blanco"
+   },
+   "width": {
+      "message": "Ancho"
+   },
+   "year": {
+      "message": "año"
+   },
+   "your_email_address": {
+      "message": "Tu dirección de correo electrónico"
+   }
+}

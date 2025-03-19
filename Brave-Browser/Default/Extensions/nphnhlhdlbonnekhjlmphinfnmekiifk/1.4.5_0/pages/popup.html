@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css.css">
+	<script src="base64.js"></script>
+	<script src="vue.min.js"></script>
+	<style>
+	::-webkit-scrollbar{width:0px;height:0px}
+    ::-webkit-scrollbar-button:vertical{display:none}
+	::-webkit-scrollbar-track:vertical{background-color:transparent}
+    ::-webkit-scrollbar-track-piece{background:transparent;border-radius:0px}
+    ::-webkit-scrollbar-thumb:vertical{background-color:#b6b6b6;border-radius:0px}
+    ::-webkit-scrollbar-thumb:vertical:hover{background-color:#3B3B3B}
+    ::-webkit-scrollbar-corner:vertical{background-color:#535353}
+    ::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00}
+	
+	body
+	{
+	--body_width :0px;
+	--body_height:0px;
+	
+	width :var(--body_width);
+	height:var(--body_height);
+	
+	font-family:"Microsoft YaHei",sans-serif;
+    font-size: 16px;
+	background:#F36A71;
+	background:#666699;
+	overflow-x: hidden;
+	-webkit-user-select:none;
+	}
+	
+	#wrap
+	{
+	width :100%;
+	height:100%;
+	overflow:auto;
+	}
+	
+	#main
+	{
+	width :100%;
+	font-size:15px;
+	}
+	
+	#reading_model
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:23vw 0;
+	opacity:1;
+	transition:opacity 600ms;
+	}
+	
+	#reading_model div
+	{
+	width :28vw;
+	height:28vw;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#fb0b0b;
+	border-radius:1000px;
+	cursor:pointer;
+	}
+	
+	#reading_model div p
+	{
+	font-family:sans-serif;
+	font-size:32px;
+	color:#fff;
+	}
+	
+	#permission
+	{
+	margin:5px;
+	padding:0 10px;
+	background-color:rgba(255, 255, 255, 1);
+	border:0px solid #fff;
+	border-radius:0px;
+	}
+	
+	#permission
+	{
+	display:none;
+	}
+	
+	#permission p, #scrollbar_type .content p
+	{
+	color:#555;
+	font-size:15px;
+	line-height:1.8em;
+	text-align:justify;
+	padding:10px 0;
+	}
+	
+	#permission p span:nth-of-type(2)
+	{
+	text-decoration:underline;
+	cursor:pointer;
+	}
+	
+	.folding_block
+	{
+	margin:5px;
+	background:#fff;
+	border-radius:0px;
+	}
+	
+	.folding_block .title
+	{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:10px;
+	cursor:pointer;
+	}
+	
+	.folding_block .title img
+	{
+	display:block;
+	width:17px;
+	}
+	
+	.folding_block .content
+	{
+	display:none;
+	border-top:1px dashed #b1b1bb;
+	}
+	
+	.folding_block .content .list
+	{
+	position:relative;
+	display:flex;
+	align-items:center;
+	line-height:1.7em;
+	padding:12px 10px;
+	cursor:pointer;
+	overflow:hidden;
+	}
+	
+	.folding_block .content .list:hover
+	{
+	background:rgba(0,0,0,0.07);
+	}
+	
+	.folding_block .content .list .dot
+	{
+	flex:0 0 auto;
+	margin-right:12px;
+	width :11px;
+	height:11px;
+	background:#666699;
+	border-radius:0px;
+	}
+	
+	.folding_block .content .list .desc
+	{
+	width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    cursor:pointer;
+	}
+	
+	.folding_block .content .list .del
+	{
+	position:absolute;
+	top:4px;
+	right:0;
+	height:calc(100% - 8px);
+	display:flex;
+	align-items:center;
+	color:#fff;
+	font-size:14px;
+	padding:0 20px;
+	border-top-left-radius   :100px;
+	border-bottom-left-radius:100px;
+	}
+	
+	.del-transition
+	{
+	transition:260ms;
+	}
+	
+	.del-enter, .del-leave
+	{
+	transform:translate3d(100%, 0, 0);
+	}
+	
+	#scrollbar_type .content p
+	{
+	padding:12px 10px;
+	}
+	
+	#points .content
+	{
+	display:none;
+	position:relative;
+	z-index:0;
+	}
+	
+	#points .content .list .dot
+	{
+	/*border-radius:100px;*/
+	}
+	
+	#points .content .line
+	{
+	position:absolute;
+	left:15px;
+	top:10px;
+	width :1px;
+	height:calc(100% - 20px);
+	background:#666699;
+	z-index:-1;
+	}
+	
+	.show_more
+	{
+	background:#f6f6f6;
+	border-radius:0px;
+	}
+	
+	.show_more p
+	{
+	width:100%;
+	font-weight:100;
+	text-align:center;
+	}
+	
+	#tabs .close
+	{
+	position:absolute;
+	right:0px;
+	top  :0px;
+	width :20px;
+	height:100%;
+	padding:0 10px;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+	
+	#tabs .close:hover
+	{
+	background:rgba(0, 0, 0, 0.1);
+	}
+	
+	#tabs .close img
+	{
+	display:block;
+	width:100%;
+	box-sizing:border-box;
+	border-radius:100px;
+	}
+	
+	#usage .content .list
+	{
+	display:block;
+	padding:0 10px;
+	}
+	
+	#usage .content .list p
+	{
+	padding:12px 0;
+	border-bottom:1px dashed #b1b1bb;
+	}
+	
+	#usage .content .list:last-of-type p
+	{
+	border-bottom:0px dashed #b1b1bb;
+	}
+	
+	#setting .setting_item
+	{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:12px 10px;
+	}
+	
+	#setting .setting_item:hover
+	{
+	background:rgba(0,0,0,0.07);
+	}
+	
+	#setting .setting_item > p
+	{
+	max-width:calc(100% - 60px);
+	line-height:1.7em;
+	white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+	}
+	
+	#setting .setting_item .butt, .switch
+	{
+	width:42px;
+    height:20px;
+    box-sizing:border-box;
+    padding:3px;
+    background:#aaa;
+    border-radius:1000px;
+    cursor:pointer;
+	}
+	
+	#setting .setting_item .butt
+	{
+	box-shadow:0 0 4px rgba(0,0,0,0.2);
+	}
+	
+	.switch div
+	{
+    width :14px;
+    height:14px;
+    background:#fff;
+    border-radius:100%;
+	}
+	
+	#setting .change_bar_style
+	{
+	position:relative;
+	}
+	
+	#setting .change_bar_style .item_in
+	{
+	position:absolute;
+	right:0;
+	top:4px;
+	height:calc(100% - 8px);
+	background:#666699;
+	border-top-left-radius   :100px;
+	border-bottom-left-radius:100px;
+	overflow:hidden;
+	display:flex;
+	align-items:center;
+	}
+	
+	#setting .change_bar_style .item_in div:not(.line)
+	{
+	height:100%;
+	padding:0 14px;
+	display:flex;
+	align-items:center;
+	cursor:pointer;
+	}
+	
+	#setting .change_bar_style .change_opacity div:not(.line)
+	{
+	padding:0 16px;
+	}
+	
+	#setting .change_bar_style .item_in div:not(.line):hover
+	{
+	background:#57578a;
+	}
+	
+	#setting .change_bar_style .item_in div p
+	{
+	color:#fff;
+	font-size:14px;
+	line-height:1em;
+	}
+	
+	#setting .change_bar_style .item_in .line
+	{
+	width:1px;
+	height:34%;
+	background:#fff;
+	}
+	
+	#more_app .content
+	{
+	display:none;
+	padding:10px;
+	}
+	
+	#more_app .app_list
+	{
+	margin-bottom:10px;
+	padding:10px;
+	/*border-radius:10px;
+	box-shadow:0 2px 4px rgba(0,0,0,0.2);*/
+	border-bottom:1px dashed #ddd;
+	}
+	
+	#more_app .app_list .app
+	{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	}
+	
+	#more_app .app_list .app .info
+	{
+	display:flex;
+	align-items:center;
+	}
+	
+	#more_app .app_list .app .info img
+	{
+	margin-right:6px;
+	display:block;
+	width:50px;
+	}
+	
+	#more_app .app_list .app .info div
+	{
+	max-width:calc(100vw - 50px - 126px);
+	}
+	
+	#more_app .app_list .app .info div p:first-of-type
+	{
+    font-size:18px;
+    font-weight:100;
+	}
+	
+	#more_app .app_list .app .info div p:last-of-type
+	{
+	margin-top:6px;
+	color:#444;
+    font-size:12px;
+	max-width:100%;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	}
+	
+	#more_app .app_list .app .install
+	{
+	color:#fff;
+	font-size:12px;
+	padding:4px 15px;
+	background:#666699;
+	border-radius:100px;
+	cursor:pointer;
+	}
+	
+	#more_app .app_list .desc
+	{
+	margin-top:14px;
+	color:#333;
+	font-size:14px;
+	line-height:1.6em;
+	text-align:justify;
+	}
+	
+	#more_app .line
+	{
+	border-top:1px dashed #b1b1bb;
+	}
+	
+	#more_app .developer
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+	margin-top:10px;
+	padding:10px;
+	background:#666699;
+	border-radius:10px;
+	cursor:pointer;
+	}
+	
+	#more_app .developer img
+	{
+	display:block;
+	width:24px;
+	}
+	
+	#more_app .developer p
+	{
+	margin-left:8px;
+	color:#fff;
+	font-size:15px;
+	font-weight:100;
+	}
+	
+	#color_selecter_cover, #toast
+	{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	}
+	
+	#color_selecter_cover
+	{
+	height:100vh;
+	box-sizing:border-box;
+	padding:20px 20px 0px;
+	background-color:rgba(0,0,0,0.4);
+	}
+	
+	#color_selecter_cover_in{
+	width:100%;
+	box-sizing:border-box;
+	background-color:#fff;
+	border-radius:10px;
+	}
+	
+	#color_selecter_cover_in .title{
+	padding:10px;
+	border-bottom:1px solid #eee;
+	}
+	
+	#color_selecter_cover_in .con{
+	display:flex;
+	align-items:center;
+	padding:20px;
+	}
+	
+	#color_selecter_cover_in .con div{
+	margin-right:10px;
+	}
+	
+	#color_selecter_cover_in .butt{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:10px;
+	}
+	
+	#color_selecter_cover_in .butt div{
+	color:#fff;
+	padding:6px 24px;
+	background-color:#1890ff;
+	border-radius:999px;
+	cursor:pointer;
+	}
+	
+	#color_selecter_cover_in .butt div:first-of-type{
+	margin-right:30px;
+    color:#fff;
+	background-color:rgb(0, 0, 0, 0.16);
+	}
+	
+	#toast_in
+	{
+	background:#3399CC;
+	background:rgba(255,255,255,0.98);
+	box-shadow:0 0 6px rgba(0,0,0,0.4);
+	}
+	
+	#toast_in p
+	{
+	color:#333;
+	font-size:15px;
+	text-align:center;
+	padding:14px 0;
+	}
+	
+	.toast-transition
+	{
+	transition:280ms;
+	}
+	
+	.toast-enter, .toast-leave
+	{
+	transform:translate3d(0, -100%, 0);
+	}
+	</style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main">
+	    	<div id="reading_model" v-bind:style="{opacity:is_normal_tab?(is_hide_native_scrollbar?'1':'0.7'):'0.7', transform:'rotate('+rotate+'deg)'}">
+	    	    <div v-on:click="switch_status" v-bind:title="language('click_to_switch_scroll_bar_type')">
+				    <p v-text="is_hide_native_scrollbar?'ON':'OFF'">R</p>
+				</div>
+	    	</div>
+	    	
+			<!-- <div id="status_desc" v-bind:style="{height:height_status_desc+'px'}">
+			    <p v-text="language(is_normal_tab?(is_hide_native_scrollbar?'is_used_custom_scroll_bar':'is_not_used_custom_scroll_bar'):'cant_use_custom_scroll_bar')"></p>
+			</div> -->
+			
+			<div id="permission" v-bind:style="{display:is_got_permission?'none':'block'}">
+			    <p><span v-text="language('permission_tip_1')">为了能更好的实现功能（比如，切换标签时正确显示页面标记的节点数目等），需要获得 Tabs 权限，你可以点击</span><span v-text="language('permission_tip_2')" v-on:click="get_permission">这里</span><span v-text="language('permission_tip_3')">授予</span></p>
+			</div>
+			
+			<div id="scrollbar_type" class="folding_block">
+	    	    <div class="title" v-on:click="to_display_content('scrollbar_type')">
+				    <p v-text="language('scrollbar_type')" v-bind:style="{fontWeight:display_scrollbar_type?'600':'normal'}">滚动条类型</p>
+					<img src="../img/to_right.png" alt="" v-bind:style="{transform:'rotate('+(display_scrollbar_type?90:0)+'deg)'}">
+				</div>
+	    		<div class="content" v-bind:style="{display:display_scrollbar_type?'block':'none'}">
+				    <p v-text="language(is_normal_tab?(is_hide_native_scrollbar?'is_used_custom_scroll_bar':'is_not_used_custom_scroll_bar'):'cant_use_custom_scroll_bar')"></p>
+				</div>
+			</div>
+			
+	    	<div id="points" class="folding_block">
+	    	    <div class="title" v-on:click="to_display_content('points')">
+				    <p v-text="language('points')" v-bind:style="{fontWeight:display_points?'600':'normal'}">标记的节点</p>
+					<img src="../img/to_right.png" alt="" v-bind:style="{transform:'rotate('+(display_points?90:0)+'deg)'}">
+				</div>
+	    	    <div class="content" v-bind:style="{display:display_points?'block':'none'}">
+	    	        <div class="list" v-for="(idx, list) in mark_point[is_reading_model?'points_reading_model':'points_normal']" track-by="value" v-bind:title="list.desc" v-on:click="to_point(list)" v-on:contextmenu="right_click(list)">
+	    	    	    <div class="dot" v-bind:style="{background:list.is_selected?'rgba(255, 66, 94, 1)':'#666699'}"></div>
+	    	    	    <p class="desc" v-text="list.desc"></p>
+						
+						<div class="del" transition="del" v-show="list.is_show_del" v-text="language(!list.is_confirm_del?'delete':'confirm')" v-bind:style="{background:!list.is_confirm_del?'#666699':'rgba(255, 66, 94, 1)'}" v-on:click.stop="delete_point(idx)">删除</div>
+	    	    	</div>
+	    	    	<div class="line"></div>
+	    	    </div>
+	    	</div>
+			
+			<div id="pages" class="folding_block">
+	    	    <div class="title" v-on:click="to_display_content('pages')">
+				    <p v-text="language('pages')" v-bind:style="{fontWeight:display_pages?'600':'normal'}">标记的页面</p>
+					<img src="../img/to_right.png" alt="" v-bind:style="{transform:'rotate('+(display_pages?90:0)+'deg)'}">
+				</div>
+	    		<div class="content" v-bind:style="{display:display_pages?'block':'none'}">
+	    	        <div class="list" v-for="(idx, list) in pages_mark" track-by="path_name_base64" v-bind:title="list.title" v-on:click="view_marked_page(!list.is_show_del?list:'')" v-on:contextmenu="right_click(list)">
+					    <div class="dot" v-bind:style="{background:list.path_name_base64==path_name_base64?'rgba(255, 66, 94, 1)':'#666699'}"></div>
+	    		        <p class="desc" v-text="list.title"></p>
+						
+						<div class="del" transition="del" v-show="list.is_show_del" v-text="language(!list.is_confirm_del?'delete':'confirm')" v-bind:style="{background:!list.is_confirm_del?'#666699':'rgba(255, 66, 94, 1)'}" v-on:click.stop="delete_page_marked(idx)">删除</div>
+	    		    </div>
+					<div class="list show_more" v-if="pages_mark.length<pages_mark_all.length" v-on:click="show_more('pages_mark')">
+					    <p v-text="language('show_more')">显示更多</p>
+					</div>
+	    		</div>
+	    	</div>
+			
+			<div id="articles" class="folding_block">
+	    	    <div class="title" v-on:click="to_display_content('articles')">
+				    <p v-text="language('articles')" v-bind:style="{fontWeight:display_articles?'600':'normal'}">收藏的文章</p>
+					<img src="../img/to_right.png" alt="" v-bind:style="{transform:'rotate('+(display_articles?90:0)+'deg)'}">
+				</div>
+	    		<div class="content" v-bind:style="{display:display_articles?'block':'none'}">
+	    	        <div class="list" v-for="(idx, list) in articles_collected" track-by="path_name_base64" v-bind:title="list.title" v-on:click="view_article(!list.is_show_del?list.path_name_base64:'')" v-on:contextmenu="right_click(list)">
+					    <div class="dot" v-bind:style="{background:list.path_name_base64==path_name_base64?'rgba(255, 66, 94, 1)':'#666699'}"></div>
+	    		        <p class="desc" v-text="list.title"></p>
+						
+						<div class="del" transition="del" v-show="list.is_show_del" v-text="language(!list.is_confirm_del?'delete':'confirm')" v-bind:style="{background:!list.is_confirm_del?'#666699':'rgba(255, 66, 94, 1)'}" v-on:click.stop="delete_article_collected(idx)">删除</div>
+	    		    </div>
+					<div class="list show_more" v-if="articles_collected.length<articles_collected_all.length" v-on:click="show_more('articles_collected')">
+					    <p v-text="language('show_more')">显示更多</p>
+					</div>
+	    		</div>
+	    	</div>
+			
+			<!-- <div id="tabs" class="folding_block">
+	    	    <div class="title" v-on:click="to_display_content('tabs')">
+				    <p v-bind:style="{fontWeight:display_tabs?'600':'normal'}">打开的标签</p>
+					<img src="../img/to_right.png" alt="" v-bind:style="{transform:'rotate('+(display_tabs?90:0)+'deg)'}">
+				</div>
+	    		<div class="content" v-bind:style="{display:display_tabs?'block':'none'}">
+	    	        <div class="list" v-for="(idx, list) in tabs" track-by="$index" v-bind:title="list.title" v-on:click="switch_tab(list.id)">
+					    <div class="dot" v-bind:style="{background:list.active?'rgba(255, 66, 94, 1)':'#666699'}"></div>
+	    		        <p class="desc" v-text="list.title"></p>
+						<div class="close" v-on:click="close_tab(list.id)">
+						    <img src="../img/close_white.png" alt="">
+						</div>
+	    		    </div>
+	    		</div>
+	    	</div> -->
+	    	
+	    	<div id="usage" class="folding_block">
+	    	    <div class="title" v-on:click="to_display_content('usage')">
+				    <p v-text="language('usage')" v-bind:style="{fontWeight:display_usage?'600':'normal'}">使用提示</p>
+					<img src="../img/to_right.png" alt="" v-bind:style="{transform:'rotate('+(display_usage?90:0)+'deg)'}">
+				</div>
+	    	    <div class="content" v-bind:style="{display:display_usage?'block':'none'}">
+				    <template v-if="is_hide_native_scrollbar">
+					<div class="list"><p v-text="language('scrollbar_will_disappear')">扩展启用后，网页的滚动条将消失，同时上方会有更为直观的浏览位置显示</p></div>
+					
+	    	        <div class="list" v-bind:style="{display:is_normal_tab?'block':'none'}"><p><span v-text="language('scroll_tip_1')">点击网页最右侧的</span><span v-text="language('scroll_tip_2')" style="color:blue">蓝色</span>/<span v-text="language('scroll_tip_3')" style="color:red">红色</span><span v-text="language('scroll_tip_4')">区域（消失后依然可用）可以让页面快速回到</span><span v-text="language('scroll_tip_5')" style="color:blue">底部</span>/<span v-text="language('scroll_tip_6')" style="color:red">顶部</span></p></div>
+					
+	    			<div class="list" v-bind:style="{display:is_normal_tab?'none':'block'}"><p v-text="language('scroll_tip_to_top')">点击网页最右侧的下 2/3 部分可以让页面快速回到顶部</p></div>
+					
+	    	        <div class="list" v-bind:style="{display:is_normal_tab?'none':'block'}"><p v-text="language('scroll_tip_to_bottom')">点击网页最右侧的上 1/3 部分可以让页面快速回到底部</p></div>
+					
+	    	        <div class="list"><p v-text="language('turn_page')">点击网页最左侧的上下部分可以快速翻页</p></div>
+					</template>
+					
+					<div class="list"><p v-text="language('mark_point')">双击网页可以标记节点，按 Ctrl 键可切换</p></div>
+					
+	    	        <!-- <div class="list"><p><span v-text="language('to_open_read_model')">点击顶部的“圆形 R”图标可以开启阅读模式（仅适用于文章正文网页，比如</span><span v-text="language('this_article')" style="text-decoration:underline" v-on:click="open_page('https://www.ifanr.com/1359347')">这一篇</span> )</p></div> -->
+					
+	    	        <div class="list"><p v-text="language('reload_page')">在扩展安装之前打开的网页需要刷新后方可使用扩展功能</p></div>
+	    	        <!-- <div><p>标记会被记录，下次打开页面也会在浏览器右上角的扩展图标上显示标记数量</p></div> -->
+	    		</div>
+	    	</div>
+			
+			<div id="setting" class="folding_block">
+	    	    <div class="title" v-on:click="to_display_content('setting')">
+				    <p v-bind:style="{fontWeight:display_setting?'600':'normal'}" v-text="language('setting')">功能设置</p>
+					<img src="../img/to_right.png" alt="" v-bind:style="{transform:'rotate('+(display_setting?90:0)+'deg)'}">
+				</div>
+	    	    <div class="content" v-bind:style="{display:display_setting?'block':'none'}">
+				    <template v-if="is_hide_native_scrollbar">
+					    <div class="setting_item change_bar_style" v-bind:title="language('change_top_progress_bar_color')" v-on:click="to_hide_style_items('top_progress')">
+					        <p v-text="language('change_top_progress_bar_color')">更改顶部进度条颜色</p>
+					    	<div class="butt" v-bind:style="{backgroundColor:setting_data.top_progress_color}" v-on:click.stop="to_display_style_items('top_progress')"></div>
+					    	
+					    	<div class="item_in" transition="del" v-show="top_progress.display_style_items">
+					    	    <div v-on:click.stop="change_top_progress_color('top_progress')"><p v-text="language('color')">颜色</p></div>
+					    		<div class="line"></div>
+					    	    <div v-on:click.stop="to_display_change_opacity('top_progress')"><p v-text="language('opacity')">透明度</p></div>
+					    	</div>
+					    	<div class="item_in change_opacity" transition="del" v-show="top_progress.display_change_opacity">
+					    	    <div v-on:click.stop="change_opacity('top_progress', 0)"><p> 0 </p></div>
+					    		<div class="line"></div>
+					    		<div v-on:click.stop="change_opacity('top_progress', 0.5)"><p> 0.5 </p></div>
+					    		<div class="line"></div>
+					    	    <div v-on:click.stop="change_opacity('top_progress', 1)"><p> 1 </p></div>
+					    	</div>
+					    </div>
+						
+						<div class="setting_item change_bar_style" v-bind:title="language('change_scroll_bar_color')" v-on:click="to_hide_style_items('scroll_bar')">
+					        <p v-text="language('change_scroll_bar_color')">更改右侧滚动条颜色</p>
+					    	<div class="butt" v-bind:style="{backgroundColor:setting_data.scroll_bar_color}" v-on:click.stop="to_display_style_items('scroll_bar')"></div>
+					    	
+					    	<div class="item_in" transition="del" v-show="scroll_bar.display_style_items">
+					    	    <div v-on:click.stop="change_top_progress_color('scroll_bar')"><p v-text="language('color')">颜色</p></div>
+					    		<div class="line"></div>
+					    	    <div v-on:click.stop="to_display_change_opacity('scroll_bar')"><p v-text="language('opacity')">透明度</p></div>
+					    	    <!-- <div v-on:click.stop="to_display_change_vein('scroll_bar')"><p v-text="language('vein')">纹理</p></div> -->
+					    	</div>
+					    	<div class="item_in change_opacity" transition="del" v-show="scroll_bar.display_change_opacity">
+					    		<div v-on:click.stop="change_opacity('scroll_bar', 0.4)"><p> 0.4 </p></div>
+								<div class="line"></div>
+								<div v-on:click.stop="change_opacity('scroll_bar', 0.6)"><p> 0.6 </p></div>
+					    		<div class="line"></div>
+					    	    <div v-on:click.stop="change_opacity('scroll_bar', 1)"><p> 1 </p></div>
+					    	</div>
+							<div class="item_in change_opacity" transition="del" v-show="scroll_bar.display_change_vein">
+					    	    <div v-on:click.stop="change_vein('scroll_bar', 'no')"><p> 无纹理 </p></div>
+					    		<div class="line"></div>
+					    		<div v-on:click.stop="change_vein('scroll_bar', 'yes')"><p> 有纹理 </p></div>
+					    	</div>
+					    </div>
+					    
+					    <div class="setting_item" v-bind:title="language('is_top_progress_auto_hide')">
+					        <p v-text="language('is_top_progress_auto_hide')">滚动结束后自动隐藏顶部进度条</p>
+					    	<div class="switch" v-bind:style="{backgroundColor:setting_data.is_top_progress_auto_hide?'#666699':'#aaa'}" v-on:click="set_setting('is_top_progress_auto_hide')">
+					    	    <div v-bind:style="{marginLeft:setting_data.is_top_progress_auto_hide?'22px':'0px'}"></div>
+					    	</div>
+					    </div>
+					    
+					    <div class="setting_item" v-bind:title="language('is_need_scrollbar')">
+					        <p v-text="language('is_need_scrollbar')">鼠标移到最右侧时显示滚动条</p>
+					    	<div class="switch" v-bind:style="{backgroundColor:setting_data.is_need_scrollbar?'#666699':'#aaa'}" v-on:click="set_setting('is_need_scrollbar')">
+					    	    <div v-bind:style="{marginLeft:setting_data.is_need_scrollbar?'22px':'0px'}"></div>
+					    	</div>
+					    </div>
+					    
+					    <div class="setting_item" v-bind:style="{opacity:setting_data.is_need_scrollbar?'1':'0.4'}" v-bind:title="language('is_fixed_scroll_bar')">
+					        <p v-text="language('is_fixed_scroll_bar')">固定显示滚动条</p>
+					    	<div class="switch" v-bind:style="{backgroundColor:setting_data.is_fixed_scroll_bar?'#666699':'#aaa'}" v-on:click="setting_data.is_need_scrollbar && set_setting('is_fixed_scroll_bar')">
+					    	    <div v-bind:style="{marginLeft:setting_data.is_fixed_scroll_bar?'22px':'0px'}"></div>
+					    	</div>
+					    </div>
+					    
+					    <div class="setting_item" v-bind:title="language('is_use_side_click')">
+					        <p v-text="language('is_use_side_click')">启用侧边点击功能</p>
+					    	<div class="switch" v-bind:style="{backgroundColor:setting_data.is_use_side_click?'#666699':'#aaa'}" v-on:click="set_setting('is_use_side_click')">
+					    	    <div v-bind:style="{marginLeft:setting_data.is_use_side_click?'22px':'0px'}"></div>
+					    	</div>
+					    </div>
+					</template>
+					
+					<div class="setting_item" v-bind:title="language('is_use_mark_point')">
+					    <p v-text="language('is_use_mark_point')">双击网页标记节点</p>
+						<div class="switch" v-bind:style="{backgroundColor:setting_data.is_use_mark_point?'#666699':'#aaa'}" v-on:click="set_setting('is_use_mark_point')">
+						    <div v-bind:style="{marginLeft:setting_data.is_use_mark_point?'22px':'0px'}"></div>
+						</div>
+					</div>
+					
+					<div class="setting_item" v-bind:title="language('is_display_points_num')">
+					    <p v-text="language('is_display_points_num')">图标显示标记节点数目</p>
+						<div class="switch" v-bind:style="{backgroundColor:setting_data.is_display_points_num?'#666699':'#aaa'}" v-on:click="set_setting('is_display_points_num')">
+						    <div v-bind:style="{marginLeft:setting_data.is_display_points_num?'22px':'0px'}"></div>
+						</div>
+					</div>
+					
+					<!-- <div class="setting_item" v-bind:title="language('is_reading_mode_auto_full_screen')">
+					    <p v-text="language('is_reading_mode_auto_full_screen')">网页开启阅读模式自动全屏</p>
+						<div class="switch" v-bind:style="{backgroundColor:setting_data.is_reading_mode_auto_full_screen?'#666699':'#aaa'}" v-on:click="set_setting('is_reading_mode_auto_full_screen')">
+						    <div v-bind:style="{marginLeft:setting_data.is_reading_mode_auto_full_screen?'22px':'0px'}"></div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+				
+			<div id="more_app" class="folding_block" v-bind:style="{display:is_zh_cn&&is_pc?'block':'none'}">
+	    	    <div class="title" v-on:click="to_display_content('more_app')">
+				    <p v-text="language('developer_space')" v-bind:style="{fontWeight:display_more_app?'600':'normal'}">开发者小屋</p>
+					<img src="../img/to_right.png" alt="" v-bind:style="{transform:'rotate('+(display_more_app?-90:0)+'deg)'}">
+				</div>
+	    	    <div class="content" v-bind:style="{display:display_more_app?'block':'none'}">
+				    <div class="app_list" v-for="list in more_app_lists" track-by="name.zh_cn">
+					    <div class="app">
+						    <div class="info">
+					            <img v-bind:src="list.icon" alt="">
+						        <div>
+						            <p v-text="list.name[language('lang')]"></p>
+						            <p v-text="list.desc_simple[language('lang')]"></p>
+					            </div>
+					        </div>
+							<p class="install" v-text="language(list.is_installed?'review':'install')" v-on:click="install(list)">安装</p>
+					    </div>
+						<p class="desc" v-text="list.desc[language('lang')]"></p>
+					</div>
+					<div class="developer" v-on:click="repost_to_support">
+					    <img src="../img/wb_logo_24.png" alt="">
+				    	<p v-text="language('developer_weibo')">转发支持</p>
+				    </div>
+				</div>
+			</div>
+	    </div>
+		
+		<div id="color_selecter_cover" v-bind:style="{display:display?'block':'none'}">
+		    <div id="color_selecter_cover_in" transition="toast" v-show="is_show">
+			    <div class="title">设置颜色</div>
+				
+				<div class="con">
+				    <div v-text="language('notice_change_color')">点击右侧的色块可选择颜色</div>
+		            <input type="color" v-model="color" />
+				</div>
+				
+				<div class="butt">
+				    <div v-text="language('cancel')" v-on:click="cancel">取消</div>
+				    <div v-text="language('confirm')" v-on:click="set_color">确定</div>
+				</div>
+		    </div>
+		</div>
+		
+		<div id="toast" v-bind:style="{display:display?'block':'none'}">
+	        <div id="toast_in" transition="toast" v-show="is_show">
+	            <p v-text="text_con"></p>
+	        </div>
+	    </div>
+	</div>
+</body>
+    <script src="popup.js"></script>
+</html>

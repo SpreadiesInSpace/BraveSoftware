@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="css.css">
+	<!-- <script src="vue.min.js"></script> -->
+	<style>
+	::-webkit-scrollbar{width:0px;height:0px}
+	::-webkit-scrollbar-button:vertical{display:none}
+	/*滚动槽*/
+	::-webkit-scrollbar-track:vertical{background-color:transparent}
+	/*滚动块*/
+    ::-webkit-scrollbar-thumb:vertical{background-color:#eee;border-radius:0px}
+	::-webkit-scrollbar-thumb:vertical:hover{background-color:#ccc}
+	::-webkit-scrollbar-track-piece{background:transparent;border-radius:0px}
+	::-webkit-scrollbar-corner:vertical{background-color:#535353}
+	::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00}
+	
+	body
+	{
+	background:#666699;
+	}
+	
+	#main
+	{
+	margin:auto;
+	width:51%;
+	min-height:100vh;
+	box-sizing:border-box;
+	padding:0px 36px 50px;
+	font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	background:#fff;
+	}
+	
+	#main p
+	{
+	color:#333;
+	font-size:17px;
+	line-height:2em;
+	text-align:justify;
+	}
+	
+	#main .head
+	{
+	display:flex;
+	align-items:center;
+	padding:25px 0 70px;
+	}
+	
+	#main .head p
+	{
+	font-size:34px;
+	font-weight:100;
+	color:#000;
+	}
+	
+	#main .head img
+	{
+	display:block;
+	margin-left:12px;
+	width:30px;
+	}
+	
+	#main .li
+	{
+	position:relative;
+	margin-top:14px;
+	padding-left:18px;
+	color:#333;
+	font-size:17px;
+	line-height:2em;
+	text-align:justify;
+	}
+	
+	#main .li::before
+	{
+	content:"";
+	position:absolute;
+	top:11px;
+	left:0;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-color:transparent transparent transparent #333;
+	border-width:6px 0 6px 9px;
+	}
+	
+	#main .normal
+	{
+	margin-top:14px;
+	}
+	
+	#main p span, #main .li span
+	{
+	font-weight:600;
+	}
+	
+	#main #footer
+	{
+	margin:80px auto 0px;
+	width:70px;
+	height:2px;
+	background:#666699;
+	}
+	</style>
+</head>
+<body>
+	<div id="main">
+	    <div class="head">
+		    <p>Welcome</p>
+			<img src="../icons/icon5_no.png" alt="">
+		</div>
+		<p>After the extension is enabled, <span>the native scroll bar of the webpage will disappear and be replaced by a simpler floating scroll bar.</span> For more personalized options (change the color of the scroll bar, etc.), please click the extension icon above to view the <span>Function Settings<span> Options, and also bring the following functions:</p>
+		<div class="li">Click on the rightmost side of the webpage to quickly <span>scroll to the top or bottom</span> of the webpage.</div>
+		<div class="li">Click on the leftmost side of the webpage to quickly <span>turn the page</span> up and down.</div>
+		<div class="li">When the scroll bar on the right is not displayed, there will be a thin line at the top of the page to show the current browsing position.</div>
+		<div class="li">Double-click the webpage to <span>mark the current browsing position</span>, and a directory will be automatically generated at the same time. Click to reach the content area, or press Ctrl to switch.</div><!-- 
+		<div class="li">The extension supports webpage <span>reading mode</span> (only applicable to the article pages). You can use it through the right-click menu or in the extension page.</div> -->
+		<p class="normal">PS: Web pages opened before the extension installation need to be <span>refreshed</span> before the extension function can be used.</p>
+		<div id="footer"></div>
+	</div>
+</body>
+    <script src="welcome.js"></script>
+</html>
