@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="referrer" content="no-referrer">
+	<title>阅读模式</title>
+	<link rel="stylesheet" href="css.css">
+	<script src="reading_model_first.js"></script>
+	<script src="base64.js"></script>
+	<script src="vue.min.js"></script>
+	<script src="jquery-min.js"></script>
+	<style>
+	::-webkit-scrollbar{width:0px;height:0px}
+	::-webkit-scrollbar-button:vertical{display:none}
+	/*滚动槽*/
+	::-webkit-scrollbar-track:vertical{background-color:transparent}
+	/*滚动块*/
+    ::-webkit-scrollbar-thumb:vertical{background-color:#eee;border-radius:0px}
+	::-webkit-scrollbar-thumb:vertical:hover{background-color:#ccc}
+	::-webkit-scrollbar-track-piece{background:transparent;border-radius:0px}
+	::-webkit-scrollbar-corner:vertical{background-color:#535353}
+	::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00}
+	
+	@font-face
+    {
+    font-family: youshe_biaotihei;
+    src: url('../fonts/YouSheBiaoTiHei.ttf');
+	font-display:fallback;
+	}
+	
+	html
+	{
+	min-height:100vh;
+	--bg_color  :#282c34;
+	--article_bg_color:#fff;
+	--text_color:#222;
+	--link_color:#03A9F4;
+	--big_text_color:#444;
+	--img_border_width:0px;
+	--img_border_radius:0px;
+	--title_bg_color:#f6f6f6; /*#eaeaea*/
+	--top_icon_bg_color:rgba(255,255,255,0.5);
+	--transition:0ms;
+	background-color:var(--bg_color);
+	}
+	
+	body
+	{
+	min-height:100vh;
+	background-color:var(--bg_color);
+	transition:background-color var(--transition) linear;
+	}
+	
+	#main
+	{
+	opacity:0; /*使用 opacity 优于 display*/
+	margin:auto;
+	width:50%;
+	color:var(--text_color); /*#00364f*/
+	font-size:18px;
+    line-height:2em;
+    text-align:justify;
+	padding:0 50px;
+	background-color:var(--article_bg_color);
+	transition:background-color var(--transition) linear;
+	}
+	
+	#main .article_content > p:not(.title), #main .article_content > div, #main .article_content > pre, #main .article_content > iframe
+	{
+	margin:35px 0;
+	}
+	
+	#main a
+	{
+	color:var(--link_color);
+	border-bottom:2px solid var(--link_color);
+	transition:color var(--transition) linear;
+	}
+	
+	#main .h1
+	{
+	color:var(--big_text_color);
+	font-size:28px;
+	font-weight:600;
+	}
+	
+	#main .h2
+	{
+	color:var(--big_text_color);
+	font-size:24px;
+	font-weight:600;
+	}
+	
+	#main .h3
+	{
+	color:var(--big_text_color);
+	font-size:20px;
+	font-weight:600;
+	}
+	
+	#main .big
+	{
+	color:var(--big_text_color);
+	font-size:20px;
+	font-weight:600;
+	}
+	
+	#main .small
+	{
+	font-size:10px;
+	}
+	
+	#main pre
+	{
+	font-family:sans-serif;
+	color:#00005c;
+	}
+	
+	#main .blockquote
+	{
+	margin:15px 0;
+	font-size:16px;
+	padding:10px 26px;
+	background-color:var(--title_bg_color);
+	border-left:8px solid #ccc;
+	transition:background-color var(--transition) linear;
+	}
+	
+	#main .strong, #main .em
+	{
+	font-weight:600;
+	}
+	
+	#main .sup, #main .sub
+	{
+	font-size:8px;
+	}
+	
+	#main .sup
+	{
+	vertical-align:super;
+	}
+	
+	#main .sub
+	{
+	vertical-align:sub;
+	}
+	
+	#main .i
+	{
+	font-style:italic;
+	}
+	
+	#main .inline_img
+	{
+	display:inline-block;
+	}
+	
+	#main .line
+	{
+	margin:36px 0;
+	border-top:1px dashed #666;
+	}
+	
+	
+	#main .title
+	{
+	font-family:youshe_biaotihei, sans-serif;
+	font-size:36px;
+	font-weight:100;
+	line-height:1.3em;
+	text-align:center;
+	padding:20px 0 60px;
+	border-left:0px solid #8d8d8d;
+	transition:background-color var(--transition) linear;
+	}
+	
+	#main .date
+	{
+	color:#888;
+	font-size:12px;
+	font-weight:200;
+	text-align:right;
+	}
+	
+	#main img
+	{
+	display:block;
+	margin:10px auto;
+	max-width:100%;
+	box-sizing:border-box;
+	border-style:solid;
+	border-color:#fff;
+	/* border-width:var(--img_border_width);
+	border-radius:var(--img_border_radius); */
+    box-shadow:0 1px 8px rgba(0,0,0,.26);
+	transition:var(--transition) linear;
+	}
+	
+	#main iframe, #main video
+	{
+	margin:15px 0;
+	max-width:100%;
+	}
+	
+	#main .footer
+	{
+	padding:80px 0;
+	}
+	
+	#main .footer div
+	{
+	margin:auto;
+	width:80px;
+	height:1px;
+	background:var(--text_color);
+	}
+	
+	#main .tip
+	{
+	display:none;
+	padding-bottom:40px;
+	}
+	
+	#main .tip p
+	{
+	color:#aaa;
+	font-size:15px;
+	text-align:center;
+	}
+	
+	#main .tip span
+	{
+	text-decoration:underline;
+	cursor:pointer;
+	}
+	
+	#tool_bar
+	{
+	position:fixed;
+	right:0px;
+	top  :0px;
+	height:100vh;
+	box-sizing:border-box;
+	padding:20px 20px 20px 0;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:flex-end;
+	opacity:0;
+	transition:800ms;
+	}
+	
+	/*#tool_bar:hover
+	{
+	opacity:1;
+	}*/
+	
+	#tool_bar > div div
+	{
+	margin-bottom:14px;
+	width :54px;
+	height:54px;
+	border-radius:100px;
+	cursor:pointer;
+	}
+	
+	#tool_bar .top div
+	{
+	background:var(--top_icon_bg_color);
+	transition:var(--transition) linear;
+	}
+	
+	#tool_bar .top img
+	{
+	display:block;
+	width :30px;
+	padding:12px;
+	cursor:pointer;
+	}
+	
+	#tool_bar .setting div
+	{
+	line-height:54px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	background:#333;
+	user-select:none;
+	}
+	
+	#tool_bar .setting div:first-of-type
+	{
+	background-color:#fa7070;
+	}
+	
+	#tool_bar .setting div:nth-of-type(2)
+	{
+	background-color:#282c34;
+	}
+	
+	#tool_bar .setting div:nth-of-type(3)
+	{
+	background-color:#2eca9c;
+	}
+	
+	#tool_bar .setting div:nth-of-type(4)
+	{
+	background-color:#aaa;
+	box-shadow:0 1px 6px rgba(0,0,0,.26);
+	}
+	
+	#tool_bar .setting div:nth-of-type(4) img
+	{
+	margin:12px;
+	width:30px;
+	}
+	
+	#loading
+	{
+	position:fixed;
+	left:calc(50vw - 60px);
+	top:calc(50vh - 25px);
+	display:none;
+	justify-content:center;
+	align-items:center;
+	width:120px;
+	height:50px;
+	box-sizing:border-box;
+	border:1px solid var(--text_color);
+	}
+	
+	#loading p
+	{
+	color:var(--text_color);
+	font-size:18px;
+	}
+	
+	#my_noscrollbar_jindu
+	{
+	position:fixed;
+	top    : 0px;
+	left   : 0px;
+	width  : 0px;
+	height : 2px;
+	background:#00ffe1; /*#47e0ce;*/
+	transition:0ms !important;
+	z-index:99999999999997;
+	}
+	
+	img
+	{
+	user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+	</style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main" v-bind:style="{opacity:display?'1':'0', width:article_style.width=='narrow'?'50%':'74%'}">
+	        <p class="title" v-text="title"></p>
+	        <!-- <p class="date" v-text="date"></p> -->
+	    	<!-- <div class="article_content" v-html="content"></div> -->
+			<div class="article_content" v-html="html">
+			    <!-- <div v-for="line in content">
+			        <template v-if="line.type==0">
+			            <p v-if="line.text.markups && line.text.markups.length>0" v-bind:class="line.text.linetype">
+			    		    <template v-for="words in qiege(line.text)">
+			    			    <a v-if="words.tag=='a'" v-bind:href="words.source" target="_blank">{{words.text}}</a>
+			    			    <template v-else>
+								    <span v-if="words.tag=='strong' || words.tag=='em'" v-bind:class="words.tag">{{words.text}}</span>
+								    <template v-else>
+									    <img v-if="words.tag=='img'" v-bind:src="words.source" alt="" class="inline_img">
+										<template v-else>{{words.text}}</template>
+									</template>
+								</template>
+			    			</template>
+			    		</p>
+						
+						<template v-else>
+			    	    	<li v-if="line.li" class="li">{{line.text.text}}</li>
+					    	<template v-else>
+							    <div v-if="line.blockquote" class="blockquote">
+								    <p v-for="line_in in fenduan(line.text.text)">{{line_in}}</p>
+								</div>
+								<template v-else>
+							        <p v-bind:class="line.text.linetype">{{line.text.text}}</p>
+								</template>
+							</template>
+			    	    </template>
+			    	</template>
+			    	
+			    	<div v-if="line.type==1">
+			    	    <img v-bind:src="line.image.source" alt="" v-bind:style="{borderWidth:article_style.is_dark?'0px':'12px', borderRadius:article_style.is_dark?'12px':'0px'}">
+			    	</div>
+					
+					<div v-if="line.type==2">
+			    	    <iframe frameborder="0" scrolling="auto" width="100%" height="360" v-bind:src="get_media_url(line.media.source)" alt=""></iframe>
+			    	</div>
+					
+					<div v-if="line.type==11" class="line"></div>
+			    </div> -->
+			</div>
+			
+	    	<div class="footer" v-bind:style="{paddingBottom:is_in_iframe?'50px':'80px'}">
+			    <div></div>
+			</div>
+			
+			<div class="tip" v-bind:style="{display:is_in_iframe?'block':'none'}">
+			    <p>Tips :  如需翻译，请先点击 <span v-on:click="open_tab">这里</span> 以新标签打开，然后再翻译</p>
+			</div>
+	    </div>
+	    
+		<div id="tool_bar" v-bind:style="{transition:display_tool_bar?'800ms':'0ms', opacity:is_show_tool_bar?'1':'0'}" v-on:mouseover="to_display_tool_bar(true)" v-on:mouseout="to_display_tool_bar(false)">
+	        <div class="top">
+	            <div v-on:click="close_win">
+	                <img v-bind:src="'../img/close_'+(article_style.is_dark?'white':'black')+'.png'" alt="">
+	            </div>
+				<div v-on:click="open_tab">
+	                <img v-bind:style="{transform:'rotate('+(is_in_iframe?0:-90)+'deg)'}" v-bind:src="'../img/open_'+(article_style.is_dark?'white':'black')+'.png'" alt="">
+	            </div>
+				<div v-on:click="set_collect">
+	                <img v-bind:src="'../img/collection_'+(is_collected?'yet':(article_style.is_dark?'white':'black'))+'.png'" alt="" title="收藏">
+	            </div>
+	        </div>
+	        
+	        <div class="setting">
+	            <div v-on:click="set_width(false)">宽度</div>
+	            <div v-on:click="set_theme" v-bind:style="{color:article_style.is_dark?'#282c34':'#fff', backgroundColor:article_style.is_dark?'#fff':'#282c34'}">主题</div>
+	            <div v-on:click="set_fullscreen(false)">全屏</div>
+	            <!-- <div class="to_top" v-on:click="to_top">
+		    	    <img src="../img/to_top3.png" alt="">
+		    	</div> -->
+	        </div>
+		</div>
+		
+		<div id="loading" v-bind:style="{display:!is_in_iframe && !display?'flex':'none'}">
+		    <p>Loading...</p>
+		</div>
+		
+		<div id="my_noscrollbar_jindu" v-bind:style="{width:jindu_width}"></div>
+	</div>
+</body>
+    <script src="reading_model.js"></script>
+</html>

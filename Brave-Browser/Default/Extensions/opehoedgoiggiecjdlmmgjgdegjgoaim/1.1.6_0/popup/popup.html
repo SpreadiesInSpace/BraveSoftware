@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Channel Blocker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <header class="header">
+      <div class="header-controls">
+        <button class="more-btn" id="moreBtn" title="More options">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <circle cx="8" cy="3" r="1.5"/>
+            <circle cx="8" cy="8" r="1.5"/>
+            <circle cx="8" cy="13" r="1.5"/>
+          </svg>
+        </button>
+        <div class="more-menu" id="moreMenu">
+          <button class="more-menu-item" id="exportData">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Export Data
+          </button>
+          <button class="more-menu-item" id="importData">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            Import Data
+          </button>
+          <button class="more-menu-item" id="clearAll">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="3 6 5 6 21 6"/>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+            </svg>
+            Clear All Lists
+          </button>
+        </div>
+      </div>
+      <div class="header-top">
+        <h1>AI Channel Blocker</h1>
+      </div>
+      <p>Block AI-generated YouTube content</p>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="settings">Preferences</button>
+      <button class="tab" data-tab="channels">Your Filter</button>
+      <button class="tab" data-tab="stats">Stats</button>
+      <button class="tab" data-tab="submit">Submit</button>
+    </nav>
+
+    <div class="content">
+      <!-- Settings Tab -->
+      <div class="tab-content active" id="settings">
+        <div class="sync-card">
+          <div class="sync-info">
+            <div class="sync-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div class="sync-details">
+              <h3>Community Blocklist</h3>
+              <span id="syncStatus">Loading...</span>
+            </div>
+          </div>
+          <button class="sync-btn" id="syncNow">Sync</button>
+        </div>
+
+        <div class="setting-row">
+          <span class="setting-label">Block Mode</span>
+          <select class="dropdown" id="blockMode">
+            <option value="disabled">Disabled</option>
+            <option value="warn">Warning overlay</option>
+            <option value="hide">Hide completely</option>
+          </select>
+        </div>
+
+        <div class="setting-row">
+          <span class="setting-label">Use community list</span>
+          <div class="toggle active" id="useCommunityList"></div>
+        </div>
+
+        <div class="setting-row">
+          <span class="setting-label">
+            Auto-blocklist submitted channels
+            <span class="info-icon" tabindex="0" aria-label="More info" data-tooltip="Instantly blocks channels you submit via the Submit tab or right-click menu. Entries are removed automatically once they appear in the community list after the next sync. Requires community list to be enabled.">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+            </span>
+          </span>
+          <div class="toggle" id="autoBlocklistOnSubmit"></div>
+        </div>
+
+        <div class="setting-row">
+          <span class="setting-label">
+            Banner Mode
+            <span class="info-icon" tabindex="0" aria-label="More info" data-tooltip="Shows a banner on video/Shorts pages when YouTube discloses how the content was made. Off: never show. AI: only when YouTube labels it made with AI (default). All: also show for altered or synthetic content. Note: the All setting is more prone to false positives — a banner may appear even when the video isn't AI slop (e.g. lightly edited or color-graded clips).">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+            </span>
+          </span>
+          <div class="segmented" id="bannerMode" role="group" aria-label="Banner Mode">
+            <button type="button" class="segment" data-value="off">Off</button>
+            <button type="button" class="segment" data-value="ai">AI</button>
+            <button type="button" class="segment" data-value="all">All</button>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <span class="setting-label">Submit as <strong id="submitUsername">Anonymous</strong> <button class="edit-username-btn" id="editUsernameBtn">Edit</button></span>
+          <div class="toggle-anon" id="anonymousSubmit"><span>Anonymous</span></div>
+        </div>
+      </div>
+
+      <!-- Channels Tab -->
+      <div class="tab-content" id="channels">
+        <div class="sub-tabs">
+          <button class="sub-tab active" data-subtab="blacklist">Blocklist</button>
+          <button class="sub-tab" data-subtab="warnlist">Warnlist</button>
+          <button class="sub-tab" data-subtab="whitelist">Allowlist</button>
+        </div>
+
+        <!-- Blacklist -->
+        <div class="subtab-content active" id="blacklist-content">
+          <p class="channel-description">Channels that are always blocked</p>
+          <div class="input-row">
+            <input type="text" class="input-field" id="blacklistInput" placeholder="@channelhandle">
+            <button class="add-btn" id="addToBlacklist">Add</button>
+          </div>
+          <div id="blacklistChannels" class="channel-list"></div>
+          <div id="blacklistEmpty" class="empty-state">No channels in blocklist</div>
+        </div>
+
+        <!-- Warnlist -->
+        <div class="subtab-content" id="warnlist-content">
+          <p class="channel-description">Channels that always show with a warning overlay</p>
+          <div class="input-row">
+            <input type="text" class="input-field" id="warnlistInput" placeholder="@channelhandle">
+            <button class="add-btn" id="addToWarnlist">Add</button>
+          </div>
+          <div id="warnlistChannels" class="channel-list"></div>
+          <div id="warnlistEmpty" class="empty-state">No channels in warnlist</div>
+        </div>
+
+        <!-- Whitelist -->
+        <div class="subtab-content" id="whitelist-content">
+          <p class="channel-description">Channels that are never blocked (bypass AI detection)</p>
+          <div class="input-row">
+            <input type="text" class="input-field" id="whitelistInput" placeholder="@channelhandle">
+            <button class="add-btn" id="addToWhitelist">Add</button>
+          </div>
+          <div id="whitelistChannels" class="channel-list"></div>
+          <div id="whitelistEmpty" class="empty-state">No channels in whitelist</div>
+        </div>
+      </div>
+
+      <!-- Statistics Tab -->
+      <div class="tab-content" id="stats">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value accent" id="blacklistCount">0</div>
+            <div class="stat-label">Blocklisted</div>
+            <div class="stat-sub">
+              <span id="blacklistManualCount">0</span> manual · <span id="blacklistPendingCount">0</span> pending sync
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value accent" id="warnlistCount">0</div>
+            <div class="stat-label">Warnlisted</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value accent" id="whitelistCount">0</div>
+            <div class="stat-label">Allowlisted</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value accent" id="communityCount">0</div>
+            <div class="stat-label">Community</div>
+          </div>
+          <div class="stat-card wide">
+            <div class="stat-value" id="videosHidden">0</div>
+            <div class="stat-label">Videos Hidden</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Tab -->
+      <div class="tab-content" id="submit">
+        <p class="submit-description">Report a channel to the community blocklist</p>
+
+        <div class="form-group">
+          <label class="form-label">Channel Handle</label>
+          <input type="text" class="input-field" id="submitChannelHandle" placeholder="@channelhandle">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Evidence Video URL</label>
+          <input type="text" class="input-field" id="submitVideoUrl" placeholder="https://youtube.com/watch?v=...">
+        </div>
+
+        <button class="submit-btn" id="submitChannel">Submit Channel</button>
+
+        <div id="submitStatus" class="submit-status"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://discord.gg/6zn9y2GYbE" target="_blank" class="footer-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+          </svg>
+          Discord
+        </a>
+        <a href="https://github.com/Override92/AiSList" target="_blank" class="footer-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          Contribute
+        </a>
+        <a href="https://ko-fi.com/override64081" target="_blank" class="footer-link support">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          Support
+        </a>
+      </div>
+      <button class="theme-toggle" id="darkModeToggle" title="Toggle dark/light mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+    </footer>
+  </div>
+
+  <!-- Username Edit Modal -->
+  <div class="modal-overlay" id="usernameModal">
+    <div class="modal-content">
+      <h3>Set Username</h3>
+      <p class="modal-description">Your username will be displayed on the leaderboard when you submit channels</p>
+      <input type="text" class="input-field" id="username" placeholder="Enter your username">
+      <div class="modal-actions">
+        <button class="btn-secondary" id="cancelUsernameBtn">Cancel</button>
+        <button class="btn-primary" id="saveUsernameBtn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="notification" class="notification"></div>
+
+  <script src="../browser-polyfill.min.js"></script>
+  <script src="popup-platform.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

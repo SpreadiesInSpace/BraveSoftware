@@ -1,0 +1,520 @@
+/* AI Channel Blocker - Content Script Styles */
+
+/* Cursor-anchored toast for keyboard-shortcut feedback. Standalone (not part
+   of the player style block) so it's available on every page, not just watch
+   pages. */
+.aiblock-cursor-toast {
+  position: fixed;
+  background: rgba(28, 28, 28, 0.95);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 2147483647;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* First-time submit confirmation modal. Standalone (not in the JS-injected
+   player style block) so it's styled on every page — keyboard shortcuts can
+   trigger it from the home feed, search, or channel pages, not just /watch. */
+.aiblock-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aiblock-confirm-modal {
+  background: #212121;
+  border-radius: 8px;
+  padding: 20px 24px;
+  max-width: 380px;
+  color: white;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+.aiblock-confirm-modal h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.aiblock-confirm-modal p {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #aaa;
+}
+.aiblock-confirm-modal .channel-name {
+  color: #3ea6ff;
+  font-weight: 500;
+}
+.aiblock-confirm-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #aaa;
+  cursor: pointer;
+}
+.aiblock-confirm-checkbox input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.aiblock-confirm-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.aiblock-confirm-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.aiblock-confirm-btn.cancel {
+  background: transparent;
+  color: #3ea6ff;
+}
+.aiblock-confirm-btn.cancel:hover {
+  background: rgba(62, 166, 255, 0.1);
+}
+.aiblock-confirm-btn.submit {
+  background: #3ea6ff;
+  color: #000;
+}
+.aiblock-confirm-btn.submit:hover {
+  background: #65b8ff;
+}
+
+/* Host classes applied to blocked tiles so they establish a local stacking
+   context for the overlay (contains z-index under YouTube's fixed navbar) and
+   clip to the tile's rounded corners. Classes instead of inline styles makes
+   cleanup reliable on recycled tiles. */
+.aib-overlay-host {
+  position: relative;
+  z-index: 0;
+}
+
+.aib-overlay-host.aib-clipped {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.ai-blocker-warning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* The video tile establishes a local stacking context (inline z-index: 0),
+     so this value is contained within the tile and cannot escape to the
+     navbar level. Must exceed YouTube's --ytd-z-index-channel-name (300). */
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.ai-blocker-warning-content {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  max-width: 300px;
+  position: relative;
+  z-index: 10000;
+  filter: none;
+}
+
+.ai-blocker-warning-content strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.ai-blocker-warning-content p {
+  margin: 8px 0;
+  font-size: 13px;
+  color: #e0e0e0;
+}
+
+.ai-blocker-show-btn {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ai-blocker-show-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Compact overlay for sidebar videos */
+.ai-blocker-warning.compact {
+  border-radius: 8px;
+  /* Cut a notch out of the bottom-right corner so YouTube's native overflow
+     (three-dot) menu stays uncovered and clickable. The clipped-out region
+     renders nothing and is not interactive, so clicks fall through to the
+     tile's menu button — letting users hit "Not interested"/"Don't recommend"
+     to train their own feed while still seeing our block.
+     The inner corner is rounded (~18px, via points tracing a quarter arc) so
+     it hugs the circular three-dot menu highlight. clip-path is used rather
+     than mask because only clip-path lets clicks pass through the hole. */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 44px),
+    calc(100% - 30px) calc(100% - 44px),
+    calc(100% - 39px) calc(100% - 42px),
+    calc(100% - 46px) calc(100% - 35px),
+    calc(100% - 48px) calc(100% - 26px),
+    calc(100% - 48px) 100%,
+    0 100%
+  );
+}
+
+.ai-blocker-warning.compact .ai-blocker-warning-content {
+  padding: 8px 10px;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.ai-blocker-warning.compact .ai-blocker-warning-content strong {
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+.ai-blocker-warning.compact .ai-blocker-warning-content p {
+  margin: 1px 0;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.ai-blocker-warning.compact .ai-blocker-show-btn {
+  margin-top: 4px;
+  padding: 4px 10px;
+  font-size: 10px;
+}
+
+.ai-blocker-channel-warning {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ai-blocker-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ai-blocker-block-channel {
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.ai-blocker-block-channel:hover {
+  background-color: white;
+  color: #ff6b6b;
+}
+
+/* Channel result overlay */
+.ai-blocker-channel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* See .ai-blocker-warning comment — safe within tile's local stacking context */
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Make hover preview videos non-interactive so context menu works on the container */
+/* This prevents Firefox from showing the video-specific context menu */
+/* Only disable pointer-events on preview videos in video tiles, not the main player */
+/* Target videos within video tile containers (for preview videos and hover videos) */
+ytd-rich-item-renderer video,
+ytd-rich-item-renderer video.video-stream,
+ytd-rich-item-renderer video.html5-main-video,
+ytd-video-renderer video,
+ytd-video-renderer video.video-stream,
+ytd-video-renderer video.html5-main-video,
+ytd-grid-video-renderer video,
+ytd-grid-video-renderer video.video-stream,
+ytd-grid-video-renderer video.html5-main-video,
+yt-lockup-view-model video,
+yt-lockup-view-model video.video-stream,
+yt-lockup-view-model video.html5-main-video,
+ytd-video-preview video.html5-main-video {
+  pointer-events: none !important;
+}
+
+/* Explicitly re-enable pointer-events for the main video player */
+#movie_player video,
+#movie_player video.html5-main-video {
+  pointer-events: auto !important;
+}
+
+/* Make sure the container remains interactive */
+ytd-rich-item-renderer,
+ytd-video-renderer,
+ytd-grid-video-renderer {
+  pointer-events: auto !important;
+}
+
+/* Shorts overlay for Shorts feed */
+.ai-blocker-shorts-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.ai-blocker-shorts-content {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  max-width: 400px;
+  position: relative;
+  z-index: 100000;
+  filter: none;
+}
+
+.ai-blocker-shorts-content strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.ai-blocker-shorts-content p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.ai-blocker-skip-btn {
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 10px 24px;
+  background-color: #3ea6ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ai-blocker-skip-btn:hover {
+  background-color: #2a8bd4;
+}
+
+/* Hide videos and channels smoothly */
+ytd-video-renderer[style*="display: none"],
+ytd-grid-video-renderer[style*="display: none"],
+ytd-compact-video-renderer[style*="display: none"],
+ytd-rich-item-renderer[style*="display: none"],
+ytd-reel-item-renderer[style*="display: none"],
+ytd-shorts-lockup-view-model[style*="display: none"],
+ytd-reel-video-renderer[style*="display: none"],
+reel-item-renderer[style*="display: none"],
+ytm-reel-item-renderer[style*="display: none"],
+ytm-shorts-lockup-view-model[style*="display: none"],
+ytm-shorts-lockup-view-model-v2[style*="display: none"],
+ytd-channel-renderer[style*="display: none"],
+ytd-grid-channel-renderer[style*="display: none"] {
+  animation: fadeOut 0.3s ease-out;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* YouTube AI-flag banner — intentionally low-key so it informs without
+   shouting. A dark surface that blends with YouTube's theme, with a thin amber
+   left-accent border as the only strong colour cue (distinct from the red
+   block overlays). */
+.ai-blocker-yt-flag-warning {
+  background: rgba(20, 20, 22, 0.92);
+  color: #c9c9cf;
+  padding: 7px 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-left: 3px solid #f59e0b;
+}
+
+/* Shorts variant: fixed near the top of the player so it's visible without
+   covering the video area. */
+/* Shorts variant: anchored inside the active reel's overlay so it stays put
+   above the channel info regardless of the YouTube sidebar's open/closed state.
+   Below .ai-blocker-shorts-overlay (99999) so a blocklist hit's full-screen
+   overlay still covers it. */
+.ai-blocker-yt-flag-warning.shorts {
+  position: absolute;
+  bottom: 130px;
+  left: 16px;
+  z-index: 99998;
+  max-width: 300px;
+  margin: 0;
+  padding: 8px 10px;
+  background: rgba(20, 20, 22, 0.82);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.ai-blocker-yt-flag-warning.shorts .ai-blocker-yt-flag-banner {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.ai-blocker-yt-flag-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12.5px;
+  font-weight: 400;
+}
+
+.ai-blocker-yt-flag-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ai-blocker-yt-flag-prompt {
+  font-size: 11px;
+  font-weight: 500;
+  margin-right: 2px;
+  white-space: nowrap;
+  opacity: 0.85;
+}
+
+.ai-blocker-yt-flag-btn {
+  padding: 4px 10px;
+  background-color: transparent;
+  color: #f5b04b;
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  border-radius: 4px;
+  font-size: 11.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.ai-blocker-yt-flag-btn:hover {
+  background-color: rgba(245, 158, 11, 0.15);
+  border-color: #f59e0b;
+  color: #f5b04b;
+}
+
+.ai-blocker-yt-flag-btn[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.ai-blocker-yt-flag-btn[disabled]:hover {
+  background-color: transparent;
+  border-color: rgba(245, 158, 11, 0.5);
+  color: #f5b04b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ai-blocker-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ai-blocker-block-channel {
+    width: 100%;
+  }
+
+  .ai-blocker-yt-flag-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ai-blocker-yt-flag-actions {
+    width: 100%;
+  }
+
+  .ai-blocker-yt-flag-btn {
+    flex: 1;
+  }
+}

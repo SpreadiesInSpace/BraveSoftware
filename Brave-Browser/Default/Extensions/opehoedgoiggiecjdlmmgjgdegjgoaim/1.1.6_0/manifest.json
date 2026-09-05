@@ -1,0 +1,52 @@
+{
+   "action": {
+      "default_icon": {
+         "48": "icons/AiBlock_ico2_48tp.png",
+         "96": "icons/AiBlock_ico2_96tp.png"
+      },
+      "default_popup": "popup/popup.html",
+      "default_title": "AI Channel Blocker"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "commands": {
+      "blacklist-channel": {
+         "description": "Add the channel under the cursor to your blocklist"
+      },
+      "submit-channel": {
+         "description": "Submit the channel under the cursor to the community list"
+      },
+      "warnlist-channel": {
+         "description": "Add the channel under the cursor to your warnlist"
+      },
+      "whitelist-channel": {
+         "description": "Add the channel under the cursor to your whitelist"
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "content.css" ],
+      "js": [ "browser-polyfill.min.js", "content.js" ],
+      "matches": [ "https://www.youtube.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "description": "Block YouTube channels that use AI-generated content",
+   "host_permissions": [ "https://www.youtube.com/*", "https://raw.githubusercontent.com/*", "https://api.aisloplist.com/*" ],
+   "icons": {
+      "48": "icons/AiBlock_ico2_48tp.png",
+      "96": "icons/AiBlock_ico2_96tp.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlj0mEclQwRKy4p2DBKhGHLOA58OjU6YhcjStU5ExcadRMWNZO6LR8+8eyucVOqpZ/nPgHUOB7zTaGj/yUTyDtQ0kMxVBGI3xSrdwHuoaWWn6MgvhkUuGYQ8qTXTsJ3vnxuXsqk1n853NkwvswWo0i2lTg02F5k03N0Abgw+PbulI1IuucyPvdkazkW2UEGPg7iduNNvd2YJvSkN9j3Ezt34MhRkFSOmTXIiptjiAJ5oY0F5oTA8XgPzz+EQp6ZQ1hgDUZVeenc5khK5Fh9PY4bVF3ayI4ns21IuhFLhSFT5aRQHipgVX1B6JxeTrZxINFRWyu4Isw/ZP+rmu7VQpmQIDAQAB",
+   "manifest_version": 3,
+   "name": "AiBlock for YouTube",
+   "permissions": [ "storage", "contextMenus", "notifications", "alarms" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.6",
+   "web_accessible_resources": [ {
+      "matches": [ "https://www.youtube.com/*" ],
+      "resources": [ "icons/*" ]
+   } ]
+}
